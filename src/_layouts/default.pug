@@ -1,0 +1,27 @@
+//- var siteUrl = '{{ site.baseurl }}/';
+- var siteUrl = '{{ root_url }}/';
+
+doctype html
+<!--[if lte IE8]>
+|<html lang="en-US" class="lte-8">
+<![endif]-->
+<!--[if gt IE8]><!-->
+|<html lang="en-US">
+<!--<![endif]-->
+  head
+    meta( charset='utf-8' )
+    title Shang Wen Long's blog
+    meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+    meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+    block stylesheets
+      //-link( href='css/commons.css', rel='stylesheets', type='text/css' ) 
+      link( href= siteUrl + 'css/index.css', rel='stylesheets', type='text/css' ) 
+
+  body
+    block IEcondition
+    .container {{ content }}
+    block srcipt
+      script( src= siteUrl + 'js/commons.js' )
+      script( src= siteUrl + 'js/index.js' )
+|</html>

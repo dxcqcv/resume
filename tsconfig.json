@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es3",
+        "allowJs": true, 
+        "module": "commonjs",
+        "sourceMap": true 
+    },
+    "exclude": [
+        "node_modules",
+        "_site"
+    ]
+}

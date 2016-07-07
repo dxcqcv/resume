@@ -8,16 +8,15 @@ gems:
 # Permalinks
 permalink:              /blog/:categories/:title/
 # permalink:            blog/:categories/:year/:month/:day/:title/
-
+timezone: Asia/Shanghai
 # Setup
 title:            'Shang Wen Long'
 name:             'Shang Wen Long'
 #tagline:          ''
 description:      'Programmer'
-#url:              http://shangwenlong.github.io/
-baseurl:
+url:              http://shangwenlong.github.io/
+baseurl: /shangwenlong.github.io/
 # blogurl:          /blog/
-
 # Assets
 #images:         '/img'
 #pdfs:           '/pdf'
