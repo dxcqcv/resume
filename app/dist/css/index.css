@@ -1,0 +1,336 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Exo 2', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+  line-height: 1.313em;
+  font-weight: 700;
+}
+h1 {
+  font-size: 3em;
+  margin: 0.563em 0;
+}
+h2 {
+  font-size: 2.25em;
+  margin: 0.625em 0;
+}
+h3 {
+  font-size: 1.5em;
+  margin: 1.313em 0;
+}
+h4 {
+  font-size: 1.313em;
+  margin: 1.313em 0;
+}
+h5 {
+  font-size: 1.125em;
+  margin: 1.313em 0;
+}
+h6 {
+  font-size: 1em;
+  margin: 0.75em 0;
+}
+@media (max-width: 20.125rem) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Exo 2', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    line-height: 1.313em;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin: 0.563em 0;
+  }
+  h2 {
+    font-size: 1.125em;
+    margin: 0.625em 0;
+  }
+  h3 {
+    font-size: 1em;
+    margin: 1.313em 0;
+  }
+  h4 {
+    font-size: 1em;
+    margin: 1.313em 0;
+  }
+  h5 {
+    font-size: 1em;
+    margin: 1.313em 0;
+  }
+  h6 {
+    font-size: 1em;
+    margin: 0.75em 0;
+  }
+}
+@media (max-width: 10rem) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Exo 2', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    line-height: 1.313em;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 1em;
+    margin: 0.563em 0;
+  }
+  h2 {
+    font-size: 1em;
+    margin: 0.625em 0;
+  }
+  h3 {
+    font-size: 1em;
+    margin: 1.313em 0;
+  }
+  h4 {
+    font-size: 1em;
+    margin: 1.313em 0;
+  }
+  h5 {
+    font-size: 1em;
+    margin: 1.313em 0;
+  }
+  h6 {
+    font-size: 1em;
+    margin: 0.75em 0;
+  }
+}
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+*,
+* before,
+* after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+main,
+aside,
+session {
+  height: 100%;
+}
+@media (max-width: 48.125rem) {
+  main,
+  aside,
+  session {
+    height: auto;
+  }
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #75b5aa;
+}
+a:hover,
+a:focus {
+  color: #7fcbbe;
+}
+html,
+body,
+.container,
+main,
+aside,
+article {
+  height: 100%;
+}
+body {
+  background: #808080;
+  color: #00f;
+}
+.container {
+  max-width: 69.375rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.container:before,
+.container:after {
+  content: '';
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+aside {
+  background: #7d858c;
+  width: 38.2%;
+  float: left;
+}
+article {
+  background: #e2e7e5;
+  width: 61.8%;
+  float: left;
+}
+.title {
+  background: #2a8795;
+  width: 31.25rem;
+  padding: 0.3125rem 3.125rem;
+  margin-left: -1.875rem;
+  position: relative;
+  color: #fff;
+}
+.title::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 1.875rem solid #235f62;
+  border-bottom: 0.9375rem solid transparent;
+  left: 0;
+  bottom: -0.9375rem;
+}
+.detail > li {
+  padding: 0 1rem;
+}
+.detail-title {
+  color: #00a5ca;
+}
+.detail-list > dt {
+  padding-bottom: 0.618rem;
+  color: #000;
+}
+.detail-list > dd {
+  padding: 0.382rem 0;
+  color: #6e6f6d;
+}
+
+/*# sourceMappingURL=index.css.map*/

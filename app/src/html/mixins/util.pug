@@ -1,0 +1,16 @@
+mixin experience_content(items)
+  each item in items
+    li                    
+      h5.detail-title 
+        span= item.place 
+        time #{item.start} - #{item.end}
+      dl.detail-list
+        dt 职位：#{item.position}
+        each des in item.description
+          dd= des
+
+mixin session(name,content,data,obj)
+  session
+    h3.title= name
+    ul.detail
+      +#{content + "_content"}(data)

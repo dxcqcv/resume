@@ -1,0 +1,78 @@
+//
+// convert px to rem or em
+//
+$base_font_size = 16
+px(val, base = 'none')
+  if base == 'none'
+    ( val / $base_font_size) rem
+  else
+    ( val / base ) em
+
+//
+// color theme
+//
+ $highlight_color = #75B5AA
+ $highlight_lightened = lighten( $highlight_color, 15%)
+ $highlight_darkened = darken( $highlight_color, 15%)
+ $highlight_greyed = lighten(desaturate( $highlight_color, 70%), 50%)
+ $highlight_hover = saturate( $highlight_lightened, 40%)
+ $highlight_textover = lighten($highlight_hover, 40%)
+
+//
+// golden layout
+//
+$phi = 1.618
+$golden_major = 0.618
+$golden_minor = 0.382
+
+step($start, $steps, $multiplier = $start, $unit = 'none')
+  for i in (1..$steps)
+    $start = $start*$multiplier
+  if $unit != 'none'
+    unit($start, $unit)
+  else
+    $start
+
+//
+// h tag font size
+//
+
+$type_h_font_lineheight = 1.313em
+// Fallback font stact from http://cssfontstack.com/
+$type_h_font_family = 'Exo 2', 'Arial Black', 'Arial Bold', Gadget, sans-serif
+$type_h_font_weight = 700
+
+$type_h_font_sizes = {
+  'h1': 3,
+  'h2': 2.25,
+  'h3': 1.5,
+  'h4': 1.313,
+  'h5': 1.125,
+  'h6': 1
+}
+$type_h_font_vmargins = {
+  'h1': 0.563,
+  'h2': 0.625,
+  'h3': 1.313,
+  'h4': 1.313,
+  'h5': 1.313,
+  'h6': 0.75
+}
+
+h_tags($factor=1)
+  h1, h2, h3, h4, h5, h6
+    font-family $type_h_font_family
+    line-height $type_h_font_lineheight
+    font-weight $type_h_font_weight
+  for h_lvl, value in $type_h_font_sizes
+    {h_lvl}
+      ((value * $factor) < 1) ? $size = 1 : $size = value * $factor
+      font-size unit($size, em)
+      margin unit($type_h_font_vmargins[h_lvl], em) 0
+
+h_tags()
+
+@media (max-width:px(322))
+  h_tags(0.5)
+@media (max-width:px(160))
+  h_tags(0.3)

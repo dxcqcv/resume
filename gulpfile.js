@@ -1,21 +1,38 @@
 var gulp = require('gulp');
 let gutil = require('gulp-util');
-var pug = require('gulp-pug');
 let webpack = require('webpack');
 let webpackConfig = require('./webpack.config.js');
+let browserSync = require('browser-sync');
 
-/*************** watch ************************/
-gulp.task('watch', function(){
-  gulp.watch(['./src/**/*.pug'],['html']); 
-  gulp.watch(['./src/**/*.styl','./src/**/*.ts'],['webpack']); 
+/**
+ * watch src folder change then run webpack
+ * watch dist folder change then reload browser
+ */
+gulp.task('compile',function(){
+  gulp.watch('app/src/**',['webpack']);
+  gulp.watch('app/dist/**').on('change',(event) => {
+    browserSync.reload();
+  }); 
 });
 
-/*************** pug to html ************************/
-gulp.task('html', function(){
-  return gulp.src(['./src/*.pug','./src/**/*.pug'])
-             .pipe(pug({pretty:true}))
-             .pipe(gulp.dest('./'));
+/**
+ * build browser sync
+ */
+gulp.task('browser-sync',function(){
+  browserSync({
+      host: 'localhost',
+      port: 3000,
+      server: { 
+        baseDir: ['app/dist'],
+        index: 'html/index.html'
+      }
+  });
 });
+
+/**
+ * default task
+ */
+gulp.task('default', ['webpack','browser-sync','compile']);
 
 /*************** webpack ************************/
 gulp.task('webpack', function(callback){
