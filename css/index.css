@@ -2575,6 +2575,14 @@ article {
             transform: perspective(1px) translateY(-50%);
   }
 }
+@media (max-width: 31.25rem) {
+  address {
+    position: static;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    padding-bottom: 1.25rem;
+  }
+}
 .info {
   position: absolute;
   top: 50%;
@@ -2585,8 +2593,6 @@ article {
 @media (max-width: 56.25rem) {
   .info {
     position: static;
-    top: auto;
-    right: auto;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -2595,6 +2601,12 @@ article {
   .my-title {
     float: right;
     text-align: right;
+  }
+}
+@media (max-width: 31.25rem) {
+  .my-title {
+    float: none;
+    text-align: left;
   }
 }
 .name {
