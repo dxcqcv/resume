@@ -1,7 +1,13 @@
 extends ./layout.pug 
 include ../mixins/util.pug
 
+
 block content
-  aside left 
-  article right
+  aside 
+    block info
+  article 
+    block personal
     block experience
+    block projects
+    block education
+

@@ -35,7 +35,7 @@ const autoprefixer = require('autoprefixer');
 /**
  * refence
  */
-const siteDist = '../';
+const siteDist = 'static/';
 // for clean folders before building
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 // for creation of HTML
@@ -94,7 +94,7 @@ module.exports = {
   entry: getEntryList('ts'),
   output: {
     path: PATHS.bin,
-    publicPath: debug ? siteDist :'{{site.baseurl}}/',
+    publicPath: debug ? '../':'{{site.baseurl}}/',
     filename: debug ? 'js/[name].js' : 'js/[name]-[hash:8].js'
   },
       // Enable sourcemaps for debugging webpack's output.
@@ -120,19 +120,19 @@ module.exports = {
     loaders: [
         {
         test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-        loader: debug? "url?limit=10000&mimetype=application/font-woff&name="+ siteDist +"fonts/[name].[ext]":"url?limit=10000&mimetype=application/font-woff&name=./fonts/[name]-[hash:8].[ext]"
+        loader: debug? "url?limit=10000&mimetype=application/font-woff&name="+ siteDist +"fonts/[name].[ext]":"url?limit=10000&mimetype=application/font-woff&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
       }, {
         test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
-        loader: debug? "url?limit=10000&mimetype=application/font-woff&name=./fonts/[name].[ext]" :"url?limit=10000&mimetype=application/font-woff&name=./fonts/[name]-[hash:8].[ext]"
+        loader: debug? "url?limit=10000&mimetype=application/font-woff&name="+ siteDist +"fonts/[name].[ext]" :"url?limit=10000&mimetype=application/font-woff&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
       }, {
         test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        loader: debug? "url?limit=10000&mimetype=application/octet-stream&name=./fonts/[name].[ext]":"url?limit=10000&mimetype=application/octet-stream&name=./fonts/[name]-[hash:8].[ext]"
+        loader: debug? "url?limit=10000&mimetype=application/octet-stream&name="+ siteDist +"fonts/[name].[ext]":"url?limit=10000&mimetype=application/octet-stream&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
       }, {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-        loader: debug? "file?&name=./fonts/[name].[ext]":"file?&name=./fonts/[name]-[hash:8].[ext]"
+        loader: debug? "file?&name="+ siteDist +"fonts/[name].[ext]":"file?&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
       }, {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: debug? "url?limit=10000&mimetype=image/svg+xml&name=./fonts/[name].[ext]":"url?limit=10000&mimetype=image/svg+xml&name=./fonts/[name]-[hash:8].[ext]"
+        loader: debug? "url?limit=10000&mimetype=image/svg+xml&name="+ siteDist +"fonts/[name].[ext]":"url?limit=10000&mimetype=image/svg+xml&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
       },
       /********* css to js */
       {
@@ -175,7 +175,7 @@ module.exports = {
   },
   plugins: debug ? [
     /** clean folders */
-    new CleanWebpackPlugin(['css/','js/','_site/js/','_site/css/'],{
+    new CleanWebpackPlugin(['app/dist/css/','app/dist/js/','app/dist/static/fonts'],{
       root: __dirname,
       verbose: true,
       dry: false 
@@ -186,7 +186,7 @@ module.exports = {
     new ExtractTextPlugin('css/[name].css'),
   ].concat(entryHtmlPlugins):[
         /** clean folders */
-    new CleanWebpackPlugin(['css/','js/','_site/js/','_site/css/'],{
+    new CleanWebpackPlugin(['app/dist/css/','app/dist/js/','app/dist/static/fonts'],{
       root: __dirname,
       verbose: true,
       dry: false 

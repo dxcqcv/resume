@@ -1,15 +1,26 @@
+include ../mixins/ga.pug
+
 doctype html
-html(lang="en")
+<!--[if lte IE 8]>
+|<html lang="zh-CN" class="lte-ie8">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+|<html lang="zh-CN">
+<!--<![endif]-->
   head
     meta(charset='utf-8')
     block title
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     block favico
+    +ga()
+    
   body
+    block IEcondition
+    
     .container
       main 
         block header 
         block content
     block footer
-    
+|</html>    

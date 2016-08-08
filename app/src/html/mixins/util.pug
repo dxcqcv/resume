@@ -1,5 +1,5 @@
-mixin experience_content(items)
-  each item in items
+mixin experience_content(itemlist)
+  each item in itemlist
     li                    
       h5.detail-title 
         span= item.place 
@@ -9,8 +9,57 @@ mixin experience_content(items)
         each des in item.description
           dd= des
 
-mixin session(name,content,data,obj)
+mixin personal_content(itemlist)
+  each item in itemlist
+    li                    
+      each item in item.description
+        p.introduce= item
+
+mixin education_content(itemlist)
+  each item in itemlist
+    li                    
+      h5.detail-title 
+        span= item.school
+      p.language 英语水平：#{item.language}
+
+mixin projects_content(itemlist)
+  each item in itemlist
+    li                    
+      h5.detail-title 
+        span= item.name
+      dl.detail-list
+        dt 
+          a.project-links(href=item.source,target="_blank") 源代码
+          a.project-links(href=item.demo,target="_blank") Demo
+        each des in item.description
+          dd= des
+          
+mixin session(name,content,data)
   session
-    h3.title= name
+    h3.session_title= name
     ul.detail
       +#{content + "_content"}(data)
+
+mixin myInfo(itemlist)
+  session.info
+    .my-title
+      h1.name= itemlist.name
+      h5.title= itemlist.title
+    address
+      ul.contact
+        each item,key in itemlist.contact
+          li
+            - if (key == 'email')
+            i(class="fa fa-envelope" aria-hidden="true")
+            a(href='mailto:'+item) #{item}
+            - else if (key == 'wechat') 
+              i(class="fa fa-"+key+"" aria-hidden="true") 
+              a(href=item.qrcode target="_blank") #{item.id}
+              br
+              +qrcode(item) 
+            - else 
+            i(class="fa fa-"+key+"" aria-hidden="true") 
+            a(href=item target="_blank") #{item}
+
+mixin qrcode(data)
+  img.qrcode-img(src=data.qrcode,alt=data.id)&attributes(attributes)
