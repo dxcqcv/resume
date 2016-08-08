@@ -1,22 +1,25 @@
-vertical-align()
-  position absolute
-  top 50%
-  transform perspective(1px) translateY(-50%)
 
 address
   @media (max-width: $response-phone)
     vertical-align()
+  @media (max-width: $response-min)
+    position static
+    transform translateY(0)
+    padding-bottom px(20)
 
 .info
   vertical-align()
   right px(80)
   @media (max-width: $response-phone)
-    position static; top auto; right auto; transform translateY(0)
+    position static;  transform translateY(0)
   
 .my-title
   @media (max-width: $response-phone)
     float right
     text-align right
+  @media (max-width: $response-min)
+    float none 
+    text-align left
 
 .name
   color #5cbcd8

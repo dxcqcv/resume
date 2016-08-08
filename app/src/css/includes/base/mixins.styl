@@ -21,3 +21,12 @@ Row( width=$default-width )
 Cols( colspan = $default-colspan, total_cols = $default-total_cols )    
   width  ( colspan * ( 100 / total_cols ) ) % 
   float  left
+
+
+//
+// align everything vertical center  
+//
+vertical-align()
+  position absolute
+  top 50%
+  transform perspective(1px) translateY(-50%)
