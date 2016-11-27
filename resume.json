@@ -5,6 +5,7 @@
     "name":"商文龙",
     "title":"前端工程师",
     "contact":{
+      "phone": 18918046351,
       "email":"dxcqcv@gmail.com",
       "github":"https://github.com/dxcqcv",
       "wechat":{
@@ -27,7 +28,7 @@
     ]
   }],
   "education":[{
-    "school":"复旦自考大专",
+    "school":"复旦自考本科",
     "language":"PETS-3"
   }],
   "projects":[
