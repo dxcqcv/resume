@@ -7,26 +7,26 @@ const debug = process.env.NODE_ENV !== 'production';
 /**
  * utility
  */
-let highlight = (str) => {
-  return str.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-    .replace(/\`(.+?)\`/g,'<strong>$1</strong>');
-}
+// let highlight = (str) => {
+//   return str.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+//     .replace(/\`(.+?)\`/g,'<strong>$1</strong>');
+// }
 
 /**
  * get json data 
  */
-function getLocals() {
-  let resumeData = require('./resume.json');
-  let localePath = './i18n/'+ resumeData.data_lang +'/dist.js';
-  let locals = require(localePath);
+// function getLocals() {
+//   let resumeData = require('./resume.json');
+//   let localePath = './i18n/'+ resumeData.data_lang +'/dist.js';
+//   let locals = require(localePath);
   
-  for(let item in resumeData) {
-    locals[item] = resumeData[item];
-  }
+//   for(let item in resumeData) {
+//     locals[item] = resumeData[item];
+//   }
   
-  locals.highlight = highlight;
-  return locals;
-}
+//   locals.highlight = highlight;
+//   return locals;
+// }
  
 /**
  * postcss
@@ -52,30 +52,33 @@ const PATHS = {
 };
 
 // for get multiple entry list
-function getEntryList (type) {
+function getEntryList (entry,type) {
+  let path = (entry === 0) ? PATHS.app : PATHS.bin
   let glob = require('glob');
   let fileList = [];
 
-  let entryList = glob.sync(PATHS.app+'/**/*.'+type).reduce(function(o,v,i) {
+  let entryList = glob.sync(path +'/**/*.'+type).reduce(function(o,v,i) {
     let regex = /([^\/]+)(?=\.\w+$)/;
     let index = v.match(regex)[0];
     o[index] = v;
     return o;
   },{});
+  // console.log(entryList)
   return entryList;
 } 
-
+                        //  console.log(getEntryList('html')) 
+ 
 /**
- * loop multiple files
+ * render html
  */
-let entryHtmlPlugins = Object.keys(getEntryList('pug'))
+let entryHtmlPlugins = Object.keys(getEntryList(1,'html'))
                         .filter(function(element){
                           return element == 'index';
                         })
                         .map(function(entryName){
-                          let v = getEntryList('pug')[entryName]; // get full path
-                          let filenamePath = v.split(/app\/src\/([^.]*)/)[1] +'.html';
-                          let templatePath = v.split(/(app\/src\/.*)/)[1];
+                          let v = getEntryList(1,'html')[entryName]; // get full path
+                          let filenamePath = v.split(/app\/dist\/([^.]*)/)[1] +'.html';
+                          let templatePath = v.split(/(app\/dist\/.*)/)[1];
                           // filter chunks config
                           let chunkList = [];
                           switch(entryName){
@@ -91,7 +94,7 @@ let entryHtmlPlugins = Object.keys(getEntryList('pug'))
                         });
 
 module.exports = {
-  entry: getEntryList('ts'),
+  entry: getEntryList(0,'ts'),
   output: {
     path: PATHS.bin,
     publicPath: '../',
@@ -115,6 +118,11 @@ module.exports = {
         test: /\.ts$/,
         exclude: /node_modules/,
         loader: 'tslint'
+      },
+      {
+        test: /\.pug$/,
+        exclude: /node_modules/,
+        loader: 'pug-lint'
       }
     ],
     loaders: [
@@ -140,16 +148,16 @@ module.exports = {
         exclude: ['/node_modules/'],
         loader: ExtractTextPlugin.extract('style',['css','postcss'],{publicPath:'.'})
       },
-      /********* pug to js */
-      {
-        test:/\.pug$/,
-        exclude: ['/node_modules/'],
-        loader: 'pug-html',
-        query: {
-          data: getLocals(),
-          pretty: true
-        }
-      },
+      /********* pug to html */
+      // {
+      //   test:/\.pug$/,
+      //   exclude: ['/node_modules/'],
+      //   loader: 'pug',
+      //   query:{
+      //     pretty: true,
+      //     locals:getLocals()
+      //   }
+      // },
       /********* ts to js */
       {
         test:/\.ts$/,

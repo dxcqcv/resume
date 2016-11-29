@@ -10,9 +10,9 @@ mixin experience_content(itemlist)
           dd= des
 
 mixin personal_content(itemlist)
-  each item in itemlist
-    li                    
-      each item in item.description
+  each value in itemlist
+    each item in value.description
+      li                    
         p.introduce= item
 
 mixin education_content(itemlist)
@@ -49,17 +49,17 @@ mixin myInfo(itemlist)
       ul.contact
         each item,key in itemlist.contact
           li
-            - if (key == 'email')
-            i(class="fa fa-envelope" aria-hidden="true")
-            a(href='mailto:'+item) #{item}
-            - else if (key == 'wechat') 
+            if (key == 'email')
+              i(class="fa fa-envelope" aria-hidden="true")
+              a(href='mailto:'+item) #{item}
+            else if (key == 'wechat') 
               i(class="fa fa-"+key+"" aria-hidden="true") 
               a(href=item.qrcode target="_blank") #{item.id}
               br
               +qrcode(item) 
-            - else 
-            i(class="fa fa-"+key+"" aria-hidden="true") 
-            a(href=item target="_blank") #{item}
+            else 
+              i(class="fa fa-"+key+"" aria-hidden="true") 
+              a(href=item target="_blank") #{item}
 
 mixin qrcode(data)
   img.qrcode-img(src=data.qrcode,alt=data.id)&attributes(attributes)

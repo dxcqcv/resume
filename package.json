@@ -33,7 +33,14 @@
     "tslint-loader": "^2.1.5",
     "url-loader": "^0.5.7"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp-pug": "^3.1.0",
+    "gulp-pug-lint": "^0.1.6",
+    "pug": "^2.0.0-beta6",
+    "pug-lint": "^2.3.0",
+    "pug-static-loader": "0.0.1",
+    "webpack": "^1.13.3"
+  },
   "bugs": {
     "url": "https://github.com/dxcqcv/resume/issues"
   },

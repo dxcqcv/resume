@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.fontSize": 22,
+    "editor.tabSize": 2,
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "workbench.action.terminal.focusNext":"Ctrl+,",
+    "workbench.action.terminal.focusPrevious":"Ctrl+.",
+    "editor.renderIndentGuides": true,
+    "files.autoSave": "onFocusChange",
+    "puglint.enable":true,
+    "window.zoomLevel": 0
+  }

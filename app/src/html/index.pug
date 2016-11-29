@@ -1,26 +1,27 @@
 extends ./layout/resume-layout.pug
 include ./mixins/util.pug
 
+
 block title
-  title= data.title
+  title= locals.title
 
 block info
-  +myInfo(data.info)
+  +myInfo(locals.info)
 
 block personal
-  +session(data.section_name.personal,'personal',data.personal)
+  +session(locals.section_name.personal,'personal',locals.personal)
   
 block experience
-  +session(data.section_name.experience,'experience',data.experience)
+  +session(locals.section_name.experience,'experience',locals.experience)
   
 block projects
-  +session(data.section_name.projects,'projects',data.projects)
+  +session(locals.section_name.projects,'projects',locals.projects)
   
 block education
-  +session(data.section_name.education,'education',data.education)
+  +session(locals.section_name.education,'education',locals.education)
 
 block IEcondition
     <!--[if lte IE 8]>
     .lte-ie8-comment-wrapper
-      p.lte-ie8-comment #{data.lt_ie8_comment}
+      p.lte-ie8-comment #{locals.lt_ie8_comment}
     <![endif]-->
