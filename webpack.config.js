@@ -4,29 +4,6 @@ const webpack = require('webpack');
 
 const debug = process.env.NODE_ENV !== 'production';
 
-/**
- * utility
- */
-// let highlight = (str) => {
-//   return str.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-//     .replace(/\`(.+?)\`/g,'<strong>$1</strong>');
-// }
-
-/**
- * get json data 
- */
-// function getLocals() {
-//   let resumeData = require('./resume.json');
-//   let localePath = './i18n/'+ resumeData.data_lang +'/dist.js';
-//   let locals = require(localePath);
-  
-//   for(let item in resumeData) {
-//     locals[item] = resumeData[item];
-//   }
-  
-//   locals.highlight = highlight;
-//   return locals;
-// }
  
 /**
  * postcss
@@ -63,10 +40,8 @@ function getEntryList (entry,type) {
     o[index] = v;
     return o;
   },{});
-  // console.log(entryList)
   return entryList;
 } 
-                        //  console.log(getEntryList('html')) 
  
 /**
  * render html
@@ -148,16 +123,6 @@ module.exports = {
         exclude: ['/node_modules/'],
         loader: ExtractTextPlugin.extract('style',['css','postcss'],{publicPath:'.'})
       },
-      /********* pug to html */
-      // {
-      //   test:/\.pug$/,
-      //   exclude: ['/node_modules/'],
-      //   loader: 'pug',
-      //   query:{
-      //     pretty: true,
-      //     locals:getLocals()
-      //   }
-      // },
       /********* ts to js */
       {
         test:/\.ts$/,

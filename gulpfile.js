@@ -75,10 +75,10 @@ gulp.task('static', function() {
 /**
  * make page to gh
  */
-gulp.task('deploy',gulp.series('static','webpack', ()=>{
+gulp.task('deploy', ()=>{
   return gulp.src('./app/dist/**/*')
     .pipe(ghPages())
-}));
+});
 
 /**
  * watch src folder change then run webpack

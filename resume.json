@@ -22,7 +22,7 @@
       "使用gulp,webpack等工具改进工作流",
       "对nodeJs,express,mongoDB有一定了解",
       "具备基本网络安全知识，XSS，CSRF，SQL注入等",
-      "安装并使用过arch linux，对LINUX有一定了解",
+      "安装并使用过arch linux和Raspberry PI 2，对Linux有一定了解",
       "了解git命令和团队开发",
       "能使用photoshop完成简单设计"
     ]
@@ -32,6 +32,14 @@
     "language":"PETS-3"
   }],
   "projects":[
+    {
+    "name":"全栈Demo网站",
+    "source":"https://github.com/dxcqcv/shanghaihuina",
+    "demo":"https://shanghaihuina.herokuapp.com/",
+    "description":[
+      "使用nodeJS,Express,Angular和mongoDB构建网站"
+    ]
+  },
     {
     "name":"个人博客",
     "source":"https://github.com/dxcqcv/dxcqcv.github.io",
