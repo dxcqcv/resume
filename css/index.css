@@ -2645,6 +2645,10 @@ a.project-links:hover {
 .language {
   color: #6e6f6d;
 }
+.major {
+  color: #6e6f6d;
+  padding-bottom: 0.3125rem;
+}
 .introduce {
   color: #6e6f6d;
   padding-top: 0.3125rem;
