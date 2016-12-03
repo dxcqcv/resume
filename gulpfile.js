@@ -84,12 +84,9 @@ gulp.task('deploy', ()=>{
  * watch src folder change then run webpack
  * watch dist folder change then reload browser
  */
-gulp.task('compile',function(){
-  gulp.watch('app/src/**',['webpack']);
-  gulp.watch('app/dist/**').on('change',(event) => {
-    browserSync.reload();
-  }); 
-});
+var srcWatcher = gulp.watch(['app/src/**/*','resume.json'],gulp.series('html','webpack',function() {
+  browserSync.reload();
+}));
 
 /**
  * build browser sync
@@ -107,6 +104,6 @@ gulp.task('browser-sync',function(){
 
 
 /**
- * default task that build and watch
+ * default task that build 
  */
-gulp.task('default', gulp.series('static','html','webpack','browser-sync','compile'));
+gulp.task('default',gulp.series('static','html','webpack','browser-sync'));

@@ -13,7 +13,7 @@ mixin personal_content(itemlist)
   each value in itemlist
     each item in value.description
       li                    
-        p.introduce= item
+        p.introduce!= highlight(item)
 
 mixin education_content(itemlist)
   each item in itemlist
