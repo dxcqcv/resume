@@ -2465,6 +2465,10 @@ a:hover,
 a:focus {
   color: #7fcbbe;
 }
+strong {
+  color: #58a598;
+  font-weight: 700;
+}
 .lte-ie8 .lte-ie8-comment-wrapper {
   color: #fff;
   background-color: #39c;
