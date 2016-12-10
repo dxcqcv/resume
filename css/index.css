@@ -2523,15 +2523,7 @@ aside {
   aside {
     position: relative;
     width: auto;
-    min-height: auto;
-    padding: 0 20px;
-    padding: 0 1.25rem;
-  }
-}
-@media (-web-device-pixel-ratio: 3) {
-  aside {
-    position: relative;
-    width: auto;
+    background: #f00 !important;
     min-height: auto;
     padding: 0 20px;
     padding: 0 1.25rem;
