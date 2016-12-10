@@ -2521,7 +2521,7 @@ aside {
 }
 @media (max-width: 56.25rem) {
   aside {
-    position: relative;
+    position: static !important;
     width: auto;
     background: #f00 !important;
     height: auto !important;
