@@ -2528,6 +2528,15 @@ aside {
     padding: 0 1.25rem;
   }
 }
+@media (-web-device-pixel-ratio: 3) and (orientation: portrait) {
+  aside {
+    position: relative;
+    width: auto;
+    min-height: auto;
+    padding: 0 20px;
+    padding: 0 1.25rem;
+  }
+}
 article {
   background: #e2e7e5;
   margin-left: 424.02px;
