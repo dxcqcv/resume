@@ -2528,7 +2528,7 @@ aside {
     padding: 0 1.25rem;
   }
 }
-@media (-web-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (-web-device-pixel-ratio: 3) {
   aside {
     position: relative;
     width: auto;
