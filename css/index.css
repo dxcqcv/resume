@@ -2493,9 +2493,6 @@ strong {
 main {
   height: 100%;
 }
-article {
-  min-height: 100%;
-}
 body {
   background: #808080;
   color: #00f;
@@ -2515,6 +2512,7 @@ body {
 aside {
   background: #7d858c;
   position: fixed;
+  min-height: 100%;
   width: 424.02px;
   width: 26.50125rem;
 }
@@ -2530,6 +2528,7 @@ aside {
 }
 article {
   background: #e2e7e5;
+  min-height: 100%;
   margin-left: 424.02px;
   margin-left: 26.50125rem;
   padding: 1px 0 50px;
