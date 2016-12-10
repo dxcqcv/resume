@@ -2546,6 +2546,14 @@ article {
     width: 100%;
   }
 }
+.footer {
+  display: none;
+}
+@media (max-width: 56.25rem) {
+  .footer {
+    display: block;
+  }
+}
 .session_title {
   background: #2a8795;
   width: 500px;
