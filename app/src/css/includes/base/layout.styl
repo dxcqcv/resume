@@ -3,7 +3,8 @@
   height 100%
 
 aside, article
-  min-height 100%
+  display table
+  height inherit
 
 body
   background grey
@@ -27,8 +28,10 @@ aside
   @extends $cf
   @media (max-width: $response-phone)
     position relative
-    width auto
-    min-height auto
+    width 100%
+    min-width px(249)
+    height auto
+    min-height: auto
     padding 0 px(20) 
   
   
@@ -38,4 +41,12 @@ article
   padding px(1) 0 px(50) 
   @media (max-width: $response-phone)
     margin-left px(0)
+    width 100%
 
+.footer
+  padding px(15) 0
+  color #000
+  display none
+  @media (max-width: $response-phone)
+    display block
+    
