@@ -8,7 +8,11 @@ const debug = process.env.NODE_ENV !== 'production';
 /**
  * postcss
  */
-const autoprefixer = require('autoprefixer'); 
+const cssnext = require('postcss-cssnext'); 
+const opacity = require('postcss-opacity'); 
+const vmin = require('postcss-vmin'); 
+const will_change= require('postcss-will-change'); 
+const alias = require('postcss-alias');
 /**
  * refence
  */
@@ -117,12 +121,6 @@ module.exports = {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: debug? "url?limit=10000&mimetype=image/svg+xml&name="+ siteDist +"fonts/[name].[ext]":"url?limit=10000&mimetype=image/svg+xml&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
       },
-      /********* css to js */
-      {
-        test: /\.css$/,
-        exclude: ['/node_modules/'],
-        loader: ExtractTextPlugin.extract('style',['css','postcss'],{publicPath:'.'})
-      },
       /********* ts to js */
       {
         test:/\.ts$/,
@@ -131,7 +129,7 @@ module.exports = {
       },
       /********* stylus to css*/
       {
-        test: /\.styl$/,
+        test: /\.(styl|css)$/,
         exclude: ['/node_modules/'],
         loader: ExtractTextPlugin.extract('style',['css','postcss','stylus'])
       },
@@ -143,8 +141,14 @@ module.exports = {
       }
     ]
   },
-  postcss: () => {
-    return [autoprefixer];
+    postcss: () => {
+    return [
+      alias,
+      will_change,
+      vmin,
+      cssnext({browsers:'last 2 versions,> 1%,ie >= 8'}),
+      opacity
+      ];
   },
   plugins: debug ? [
     /** clean folders */
