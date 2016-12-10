@@ -2493,6 +2493,11 @@ strong {
 main {
   height: 100%;
 }
+aside,
+article {
+  display: table;
+  height: inherit;
+}
 body {
   background: #808080;
   color: #00f;
@@ -2512,14 +2517,15 @@ body {
 aside {
   background: #7d858c;
   position: fixed;
-  min-height: 100%;
   width: 424.02px;
   width: 26.50125rem;
 }
 @media (max-width: 56.25rem) {
   aside {
     position: relative;
-    width: auto;
+    width: 100%;
+    min-width: 249px;
+    min-width: 15.5625rem;
     height: auto;
     min-height: auto;
     padding: 0 20px;
@@ -2528,7 +2534,6 @@ aside {
 }
 article {
   background: #e2e7e5;
-  min-height: 100%;
   margin-left: 424.02px;
   margin-left: 26.50125rem;
   padding: 1px 0 50px;
@@ -2538,6 +2543,7 @@ article {
   article {
     margin-left: 0px;
     margin-left: 0rem;
+    width: 100%;
   }
 }
 .session_title {
