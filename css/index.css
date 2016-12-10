@@ -2493,7 +2493,6 @@ strong {
 main {
   height: 100%;
 }
-aside,
 article {
   min-height: 100%;
 }
@@ -2524,7 +2523,6 @@ aside {
     position: relative;
     width: auto;
     height: auto;
-    font-size: 16px;
     min-height: auto;
     padding: 0 20px;
     padding: 0 1.25rem;
