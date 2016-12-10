@@ -2524,7 +2524,7 @@ aside {
     position: relative;
     width: auto;
     background: #f00 !important;
-    min-height: auto;
+    min-height: auto !important;
     padding: 0 20px;
     padding: 0 1.25rem;
   }
