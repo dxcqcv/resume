@@ -2521,11 +2521,11 @@ aside {
 }
 @media (max-width: 56.25rem) {
   aside {
-    position: static !important;
+    position: relative;
     width: auto;
     background: #f00 !important;
     height: auto !important;
-    min-height: auto !important;
+    min-height: 0 !important;
     padding: 0 20px;
     padding: 0 1.25rem;
   }
