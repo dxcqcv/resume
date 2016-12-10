@@ -2523,8 +2523,8 @@ aside {
   aside {
     position: relative;
     width: auto;
-    height: 150px;
-    height: 9.375rem;
+    height: auto;
+    font-size: 16px;
     min-height: auto;
     padding: 0 20px;
     padding: 0 1.25rem;
