@@ -10,10 +10,10 @@ let ghPages = require('gulp-gh-pages');
 /**
  * check pug syntax
  */
- gulp.task('checkGulp', function(){
-   return gulp.src('app/src/html/index.pug')
-   .pipe(puglint);
- })
+gulp.task('checkGulp', function(){
+  return gulp.src('app/src/html/index.pug')
+    .pipe(puglint);
+});
 
 /**
  * utility
@@ -21,7 +21,7 @@ let ghPages = require('gulp-gh-pages');
 let highlight = (str) => {
   return str.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
     .replace(/\`(.+?)\`/g,'<strong>$1</strong>');
-}
+};
 /**
  * get json data 
  */
@@ -40,13 +40,13 @@ var locals = (function getLocals() {
 /**
  * pug to html
  */
- gulp.task('html',function(){
-   return gulp.src('./app/src/html/index.pug')
-   .pipe(pug({
-     locals: locals
-   }))
-   .pipe(gulp.dest('./app/dist/html'))
- });
+gulp.task('html',function(){
+  return gulp.src('./app/src/html/index.pug')
+    .pipe(pug({
+      locals: locals
+    }))
+    .pipe(gulp.dest('./app/dist/html'));
+});
 
 /**
  * deploy task just build
@@ -69,7 +69,7 @@ gulp.task('webpack', function(callback){
  */
 gulp.task('static', function() {
   return gulp.src('./static/**/*', {base: 'static'})
-    .pipe(gulp.dest('./app/dist/static'))
+    .pipe(gulp.dest('./app/dist/static'));
 });
 
 /**
@@ -77,14 +77,14 @@ gulp.task('static', function() {
  */
 gulp.task('deploy', ()=>{
   return gulp.src('./app/dist/**/*')
-    .pipe(ghPages())
+    .pipe(ghPages());
 });
 
 /**
  * watch src folder change then run webpack
  * watch dist folder change then reload browser
  */
-var srcWatcher = gulp.watch(['app/src/**/*','resume.json'],gulp.series('html','webpack',function() {
+gulp.watch(['app/src/**/*','resume.json'],gulp.series('html','webpack',function() {
   browserSync.reload();
 }));
 
@@ -93,12 +93,12 @@ var srcWatcher = gulp.watch(['app/src/**/*','resume.json'],gulp.series('html','w
  */
 gulp.task('browser-sync',function(){
   browserSync({
-      host: 'localhost',
-      port: 3000,
-      server: { 
-        baseDir: ['app/dist'],
-        index: 'html/index.html'
-      }
+    host: 'localhost',
+    port: 3000,
+    server: { 
+      baseDir: ['app/dist'],
+      index: 'html/index.html'
+    }
   });
 });
 
