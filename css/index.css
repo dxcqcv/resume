@@ -2549,7 +2549,7 @@ article {
 .footer {
   padding: 15px 0;
   padding: 0.9375rem 0;
-  color: #fff;
+  color: #000;
   display: none;
 }
 @media (max-width: 56.25rem) {
