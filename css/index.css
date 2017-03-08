@@ -6,8 +6,8 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(../static/fonts/fontawesome-webfont.eot);
-  src: url(../static/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3) format('embedded-opentype'), url(../static/fonts/fontawesome-webfont.woff2) format('woff2'), url(../static/fonts/fontawesome-webfont.woff) format('woff'), url(../static/fonts/fontawesome-webfont.ttf) format('truetype'), url(../static/fonts/fontawesome-webfont.svg#fontawesomeregular) format('svg');
+  src: url(../static/fonts/fontawesome-webfont-a247f435.eot);
+  src: url(../static/fonts/fontawesome-webfont-a247f435.eot?#iefix&v=4.6.3) format('embedded-opentype'), url(../static/fonts/fontawesome-webfont-a1a450ea.woff2) format('woff2'), url(../static/fonts/fontawesome-webfont-f84ffa8d.woff) format('woff'), url(../static/fonts/fontawesome-webfont-9f5388fa.ttf) format('truetype'), url(../static/fonts/fontawesome-webfont-6c4c3504.svg#fontawesomeregular) format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2636,6 +2636,18 @@ article {
         -ms-transform: translateY(0);
             transform: translateY(0);
   }
+}
+.lang-panel {
+  text-align: right;
+}
+.lang-panel > a {
+  color: #000;
+  display: inline-block;
+  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
+}
+.selected {
+  border-bottom: 1px solid #f0f8ff;
 }
 @media (max-width: 56.25rem) {
   .my-title {
