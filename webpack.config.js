@@ -64,8 +64,9 @@ let entryHtmlPlugins = Object.keys(getEntryList(1,'html'))
     let templatePath = v.split(/(app\/dist\/.*)/g)[1];
     // filter chunks config
     let chunkList = [];
-    switch(entryName){
-      case 'index':
+    // fixed only index name bug
+    switch(true){
+      case /index?./.test(entryName):
         chunkList.push('commons','index');
         break;
     }
