@@ -25,8 +25,8 @@ let highlight = (str) => {
 /**
  * get json data 
  */
-var locals = (function getLocals() {
-  let resumeData = require('./resume.json');
+var locals = function getLocals(version) {
+  let resumeData = require(version);
   let localePath = './i18n/'+ resumeData.data_lang +'/dist.js';
   let locals = require(localePath);
   
@@ -36,16 +36,25 @@ var locals = (function getLocals() {
   
   locals.highlight = highlight;
   return locals;
-}());
+};
+var localsCn = locals('./resume-cn.json');
+var localsEn = locals('./resume-en.json');
 /**
  * pug to html
  */
 gulp.task('html',function(){
   return gulp.src('./app/src/html/index.pug')
     .pipe(pug({
-      locals: locals
+      locals: localsCn 
     }))
     .pipe(gulp.dest('./app/dist/html'));
+});
+gulp.task('html-en',function(){
+  return gulp.src('./app/src/html/index.pug')
+    .pipe(pug({
+      locals: localsEn 
+    }))
+    .pipe(gulp.dest('./app/dist/html-en'));
 });
 
 /**
@@ -84,7 +93,7 @@ gulp.task('deploy', ()=>{
  * watch src folder change then run webpack
  * watch dist folder change then reload browser
  */
-gulp.watch(['app/src/**/*','resume.json'],gulp.series('html','webpack',function() {
+gulp.watch(['app/src/**/*','resume.json'],gulp.series('html','html-en','webpack',function() {
   browserSync.reload();
 }));
 
@@ -97,7 +106,7 @@ gulp.task('browser-sync',function(){
     port: 3000,
     server: { 
       baseDir: ['app/dist'],
-      index: 'html/index.html'
+      index: 'html-en/index.html'
     }
   });
 });
@@ -106,4 +115,4 @@ gulp.task('browser-sync',function(){
 /**
  * default task that build 
  */
-gulp.task('default',gulp.series('static','html','webpack','browser-sync'));
+gulp.task('default',gulp.series('static','html','html-en','webpack','browser-sync'));

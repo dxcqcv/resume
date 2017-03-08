@@ -32,15 +32,19 @@ const PATHS = {
   bin: path.join(__dirname, '/app/dist')
 };
 
-// for get multiple entry list
+// for get multiple entry list to add CSS and others sources
 function getEntryList (entry,type) {
   let path = (entry === 0) ? PATHS.app : PATHS.bin
   let glob = require('glob');
   let fileList = [];
 
-  let entryList = glob.sync(path +'/**/*.'+type).reduce(function(o,v,i) {
-    let regex = /([^\/]+)(?=\.\w+$)/;
+  let entryList = glob.sync(path +'/**/*.'+type).reduce(function(o,v,i,arr) {
+    let regex = /([^\/]+)(?=\.\w+$)/g;
     let index = v.match(regex)[0];
+    // avoid duplicated index 
+    if(Object.keys(o).length !==0 && index === Object.keys(o)[i-1].toString()) {
+      index = index + i; 
+    }
     o[index] = v;
     return o;
   },{});
@@ -51,26 +55,26 @@ function getEntryList (entry,type) {
  * render html
  */
 let entryHtmlPlugins = Object.keys(getEntryList(1,'html'))
-                        .filter(function(element){
-                          return element == 'index';
-                        })
-                        .map(function(entryName){
-                          let v = getEntryList(1,'html')[entryName]; // get full path
-                          let filenamePath = v.split(/app\/dist\/([^.]*)/)[1] +'.html';
-                          let templatePath = v.split(/(app\/dist\/.*)/)[1];
-                          // filter chunks config
-                          let chunkList = [];
-                          switch(entryName){
-                            case 'index':
-                              chunkList.push('commons','index');
-                              break;
-                          }
-                          return new HtmlWebpackPlugin({
-                            filename: filenamePath,
-                            chunks: chunkList,
-                            template: templatePath
-                          })
-                        });
+  .filter(function(element){
+    return element.match(/index?./) ;
+  })
+  .map(function(entryName){
+    let v = getEntryList(1,'html')[entryName]; // get full path
+    let filenamePath = v.split(/app\/dist\/([^.]*)/g)[1] +'.html';
+    let templatePath = v.split(/(app\/dist\/.*)/g)[1];
+    // filter chunks config
+    let chunkList = [];
+    switch(entryName){
+      case 'index':
+        chunkList.push('commons','index');
+        break;
+    }
+    return new HtmlWebpackPlugin({
+      filename: filenamePath,
+      chunks: chunkList,
+      template: templatePath
+    });
+  });
 
 module.exports = {
   entry: getEntryList(0,'ts'),
@@ -83,43 +87,74 @@ module.exports = {
     devtool: "source-map",
 
     resolve: {
-        // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js",".styl"]
-    },
+      enforceModuleExtension: true,
+      // Add '.ts' and '.tsx' as resolvable extensions.
+      extensions: [ '.webpack.js', '.web.js', '.ts', '.tsx', 'styl']
+  },
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'jshint'
-      },
-      {
-        test: /\.ts$/,
-        exclude: /node_modules/,
-        loader: 'tslint'
-      },
-      {
-        test: /\.pug$/,
-        exclude: /node_modules/,
-        loader: 'pug-lint'
-      }
-    ],
-    loaders: [
+    //preLoaders: [
+      //{
+        //test: /\.js$/,
+        //exclude: /node_modules/,
+        //loader: 'jshint'
+      //},
+      //{
+        //test: /\.ts$/,
+        //exclude: /node_modules/,
+        //loader: 'tslint'
+      //},
+      //{
+        //test: /\.pug$/,
+        //exclude: /node_modules/,
+        //loader: 'pug-lint'
+      //}
+    //],
+    rules: [
         {
         test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-        loader: debug? "url?limit=10000&mimetype=application/font-woff&name="+ siteDist +"fonts/[name].[ext]":"url?limit=10000&mimetype=application/font-woff&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
-      }, {
+
+        use:[{ loader: 'url-loader',
+          options: {
+            limit:'10000',
+            mimetype:'application/font-woff',
+            name: siteDist +'fonts/[name]-[hash:8].[ext]'
+          }
+        } ]
+        }, 
+       {
         test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
-        loader: debug? "url?limit=10000&mimetype=application/font-woff&name="+ siteDist +"fonts/[name].[ext]" :"url?limit=10000&mimetype=application/font-woff&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
+        use:[{ loader: 'url-loader',
+          options: {
+            limit:'10000',
+            mimetype:'application/font-woff',
+            name: siteDist +'fonts/[name]-[hash:8].[ext]'
+          }
+        } ]
       }, {
         test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        loader: debug? "url?limit=10000&mimetype=application/octet-stream&name="+ siteDist +"fonts/[name].[ext]":"url?limit=10000&mimetype=application/octet-stream&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
+        use:[{ loader: 'url-loader',
+          options: {
+            limit:'10000',
+            mimetype:'application/octet-stream',
+            name: siteDist +'fonts/[name]-[hash:8].[ext]'
+          }
+        } ]
       }, {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-        loader: debug? "file?&name="+ siteDist +"fonts/[name].[ext]":"file?&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
+        use:[{ loader: 'file-loader',
+          options: {
+            name: siteDist +'fonts/[name]-[hash:8].[ext]'
+          }
+        } ]
       }, {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: debug? "url?limit=10000&mimetype=image/svg+xml&name="+ siteDist +"fonts/[name].[ext]":"url?limit=10000&mimetype=image/svg+xml&name="+ siteDist +"fonts/[name]-[hash:8].[ext]"
+        use:[{ loader: 'url-loader',
+          options: {
+            limit:'10000',
+            mimetype: 'image/svg+xml',
+            name: siteDist +'fonts/[name]-[hash:8].[ext]'
+          }
+        } ]
       },
       /********* ts to js */
       {
@@ -131,51 +166,72 @@ module.exports = {
       {
         test: /\.(styl|css)$/,
         exclude: ['/node_modules/'],
-        loader: ExtractTextPlugin.extract('style',['css','postcss','stylus'])
+        use:ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use:['css-loader','postcss-loader','stylus-loader']
+        })  
       },
       /********* url loader*/
       {
         test: /\.(png|jpg)$/,
         exclude: /node_modules/,
-        loader: 'url-loader?limit=8192&name=[name]-[hash:8].[ext]'
+        use:[{ 
+          loader: 'url-loader',
+          options: {
+            limit: '8192',
+            name:'[name]-[hash:8].[ext]'
+          }
+        } ]
       }
     ]
   },
-    postcss: () => {
-    return [
-      alias,
-      will_change,
-      vmin,
-      cssnext({browsers:'last 2 versions,> 1%,ie >= 8'}),
-      opacity
-      ];
-  },
   plugins: debug ? [
     /** clean folders */
-    new CleanWebpackPlugin(['app/dist/css/','app/dist/js/','app/dist/static/fonts'],{
-      root: __dirname,
-      verbose: true,
-      dry: false 
+    //new CleanWebpackPlugin(['app/dist/css/','app/dist/js/','app/dist/static/fonts'],{
+      //root: __dirname,
+      //verbose: true,
+      //dry: false 
+    //}),
+    new webpack.LoaderOptionsPlugin({
+      debug: true,
+      options: {
+        resolve:{
+          extensions: ['.ts', '.tsx', '.js']
+        },
+        postcss: [
+          alias,
+          will_change,
+          vmin,
+          cssnext({browsers:'last 2 versions,> 1%,ie >= 8'}),
+          opacity
+        ], 
+      }
     }),
+
     /** commonsPlugin */
-    new webpack.optimize.CommonsChunkPlugin("commons", "js/commons.js"),
+    new webpack.optimize.CommonsChunkPlugin({name:"commons", filename:"js/commons.js"}),
     /** extract css */
-    new ExtractTextPlugin('css/[name].css'),
+    new ExtractTextPlugin({
+      filename:'css/[name].css'}),
+      //new HtmlWebpackPlugin({
+        //template: 'app/dist/html-en/index.html',
+        //filename: 'html-en/index.html'
+      //}),
+      //new HtmlWebpackPlugin({
+        //template: 'app/dist/html/index.html',
+        //filename: 'html/index.html'
+      //}),
   ].concat(entryHtmlPlugins):[
         /** clean folders */
-    new CleanWebpackPlugin(['app/dist/css/','app/dist/js/','app/dist/static/fonts'],{
-      root: __dirname,
-      verbose: true,
-      dry: false 
-    }),
+    //new CleanWebpackPlugin(['app/dist/css/','app/dist/js/','app/dist/static/fonts'],{
+      //root: __dirname,
+      //verbose: true,
+      //dry: false 
+    //}),
     /** commonsPlugin */
-    new webpack.optimize.CommonsChunkPlugin("commons", "js/commons-[hash:8].js"),
+    new webpack.optimize.CommonsChunkPlugin({name:"commons",filename: "js/commons-[hash:8].js"}),
     /** extract css */
-    new ExtractTextPlugin('css/[name]-[hash:8].css'),
-    new webpack.optimize.DedupePlugin(),
+    new ExtractTextPlugin({filename:'css/[name]-[hash:8].css'}),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
-  ].concat(entryHtmlPlugins),
-  jshint: {
-    esversion: 6
-  }
+  ].concat(entryHtmlPlugins)
 };

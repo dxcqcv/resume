@@ -7,12 +7,23 @@ address
     transform translateY(0)
     padding-bottom px(20)
 
+ $info-color=#b0cbe9
 .info
   vertical-align()
   right px(80)
   @media (max-width: $response-phone)
     position static;  transform translateY(0)
   
+.lang-panel
+  text-align right
+  & > a
+    color black 
+    display inline-block
+    padding px(10) px(20)
+
+.selected
+  border-bottom 1px solid aliceblue
+
 .my-title
   @media (max-width: $response-phone)
     float right
@@ -27,7 +38,7 @@ address
 .title,
 .contact a,
 .contact i
-  color #b0cbe9
+  color $info-color 
   
 .contact a:hover
   color $highlight_hover

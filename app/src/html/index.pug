@@ -1,24 +1,23 @@
 extends ./layout/resume-layout.pug
 include ./mixins/util.pug
 
-
 block title
   title= locals.title
 
 block info
-  +myInfo(locals.info)
-
+  +myInfo(locals.info,{selected:locals.miscellaneous.selected})
+ 
 block personal
   +session(locals.section_name.personal,'personal',locals.personal)
   
 block experience
-  +session(locals.section_name.experience,'experience',locals.experience)
+  +session(locals.section_name.experience,'experience',locals.experience,{post:locals.miscellaneous.post})
   
 block projects
-  +session(locals.section_name.projects,'projects',locals.projects)
+  +session(locals.section_name.projects,'projects',locals.projects,{source:locals.miscellaneous.source})
   
 block education
-  +session(locals.section_name.education,'education',locals.education)
+  +session(locals.section_name.education,'education',locals.education,{major:locals.miscellaneous.major,"language-level":locals.miscellaneous.level})
   
 block footer
   p.footer This resume is generated with Gulp, Webpack, Stylus and Jade by 

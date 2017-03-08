@@ -1,11 +1,11 @@
-mixin experience_content(itemlist)
+mixin experience_content(itemlist,misc)
   each item in itemlist
     li                    
       h5.detail-title 
         span= item.place 
         time #{item.start} - #{item.end}
       dl.detail-list
-        dt 职位：#{item.position}
+        dt #{misc.post}：#{item.position}
         each des in item.description
           dd= des
 
@@ -15,36 +15,39 @@ mixin personal_content(itemlist)
       li                    
         p.introduce!= highlight(item)
 
-mixin education_content(itemlist)
+mixin education_content(itemlist,misc)
   each item in itemlist
     li                    
       h5.detail-title 
-        span= item.school
-      p.major 专业：#{item.major}
-      p.language 英语水平：#{item.language}
+        span= item.time
+      p.major #{misc.major}：#{item.major}
+      if(item.language)
+        p.language #{misc.language-level}：#{item.language}
 
-mixin projects_content(itemlist)
+mixin projects_content(itemlist,misc)
   each item in itemlist
     li                    
       h5.detail-title 
         span= item.name
       dl.detail-list
         dt 
-          a.project-links(href=item.source,target="_blank") 源代码
+          a.project-links(href=item.source,target="_blank") #{misc.source}
           a.project-links(href=item.demo,target="_blank") Demo
         each des in item.description
           dd= des
           
-mixin session(name,content,data)
+mixin session(name,content,data,misc1)
   session
     h3.session_title= name
     ul.detail
-      +#{content + "_content"}(data)
+      +#{content + "_content"}(data,misc1)
 
-mixin myInfo(itemlist)
+
+mixin myInfo(itemlist,misc)
   session.info
+    +verButton(misc)
     .my-title
-      h1.name= itemlist.name
+      h1.name= itemlist.name  
       h5.title= itemlist.title
     address
       ul.contact
@@ -61,6 +64,18 @@ mixin myInfo(itemlist)
             else 
               i(class="fa fa-"+key+"" aria-hidden="true") 
               a(href=item target="_blank") #{item}
+
+mixin verButton(misc)
+  // toggle class
+  - var s = misc.selected =='cn'
+  .lang-panel
+    a(
+      class=s ? "selected" : "" 
+      href="https://dxcqcv.github.io/resume/html/index.html") 中 
+    a(
+      class=s ? "" : "selected" 
+      href="https://dxcqcv.github.io/resume/html-en/index.html") en
+
 
 mixin qrcode(data)
   img.qrcode-img(src=data.qrcode,alt=data.id)&attributes(attributes)

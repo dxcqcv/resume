@@ -1,0 +1,110 @@
+{
+  "data_lang":"en",
+  "title":"Roy Shang's CV",
+  "info":{
+    "name":"Roy Shang",
+    "title":"Frontend Developer",
+    "contact":{
+      "birthday-cake":"1984-11-04",
+      "phone": "18918046351",
+      "email":"dxcqcv@gmail.com",
+      "github":"https://github.com/dxcqcv",
+      "wechat":{
+       "id":"dxcqcv" ,
+       "qrcode":"../static/shangwenlong-wechat.svg"
+      }
+    }
+  },
+  "personal":[{
+    "description":[
+      "Expertly using semantic HTML and CSS to build complex web layout.",
+      "Understanding vanilla `javascript` and `CSS`, so can find and fix bugs quickly.",
+      "Prefer to use `pug`, `stylus`, `postCSS`, `babel`,`gulp` and `webpack`,`git` etc tools to make workflow more efficiency.",
+      "Having little experience about `nodeJs`,`express`,`mongoDB`,`reactJS`,`three.js`,`Jenkins`",
+      "Know what is `XSS`，`CSRF`，`SQL`.",
+      "Play `arch linux` on `Raspberry PI 2` and have base knowledge about linux OS",
+      "Make simple design using Photoshop."
+    ]
+  }],
+   
+  
+  "education":[
+    {
+    "time":"2017.03 graduate student at adult self-study Shanghai Fu Dan University",
+    "major":"Major in Computer information administration"
+  }],
+  "projects":[
+    {
+    "name":"MEAN website",
+    "source":"https://github.com/dxcqcv/shanghaihuina",
+    "demo":"https://shanghaihuina.herokuapp.com/",
+    "description":[
+      "Used node.js, Express ,AngularJS and mongoDB"
+    ]
+  },
+    {
+    "name":"Personal blog",
+    "source":"https://github.com/dxcqcv/dxcqcv.github.io",
+    "demo":"https://dxcqcv.github.io/",
+    "description":[
+      "Used webpack, jekyll, gulp, stylus, and pug"
+    ]
+  },
+    {
+    "name":"Personal online CV",
+    "source":"https://github.com/dxcqcv/resume",
+    "demo":"https://dxcqcv.github.io/resume/html-en/index.html",
+    "description":[
+      "Used webpack gulp stylus and pug"
+    ]
+  }
+  ],
+  "experience":[
+    {
+    "place":"ENN Intelligent Energy Group",
+    "start":"2014.3",
+    "end":"2016.10",
+    "position":"Front-End",
+    "description": [
+      "Related technology: jQuery, Bootstrap, Node.js, MongoDB, gulp and webpack"
+    ] 
+  },
+  {
+    "place":"San Die Information technology co., ltd",
+    "start":"2012.5",
+    "end":"2014.2",
+    "position":"Front-End",
+    "description":[
+      "Related technology: HTML, CSS,jQuery,Photoshop"
+    ]
+  },
+  {
+    "place":"Yesky.com",
+    "start":"2010",
+    "end":"2012",
+    "position":"web editor",
+    "description": [
+      "To write testable articles about smart phone, soundBox etc.",
+      "To write some interview report about dealers."
+    ]
+  },
+  {
+    "place":"Ocj.com.cn",
+    "start":"2007",
+    "end":"2010",
+    "position":"technical support",
+    "description": [
+      "To install and maintain HP PC."
+    ]
+  },
+  {
+    "place":"Shanghai yibao",
+    "start":"2005",
+    "end":"2007",
+    "position":"editor",
+    "description": [
+      "Edited and composed newspapers."
+    ]
+  }
+  ]
+}
