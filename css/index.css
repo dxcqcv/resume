@@ -2495,8 +2495,7 @@ main {
 }
 aside,
 article {
-  display: table;
-  height: inherit;
+  min-height: 100%;
 }
 body {
   background: #808080;
@@ -2523,10 +2522,7 @@ aside {
 @media (max-width: 56.25rem) {
   aside {
     position: relative;
-    width: 100%;
-    min-width: 249px;
-    min-width: 15.5625rem;
-    height: auto;
+    width: auto;
     min-height: auto;
     padding: 0 20px;
     padding: 0 1.25rem;
@@ -2713,6 +2709,7 @@ a.project-links:hover {
   color: #6e6f6d;
   padding-top: 5px;
   padding-top: 0.3125rem;
+  word-wrap: break-word;
 }
 
 /*# sourceMappingURL=index.css.map*/
