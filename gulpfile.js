@@ -106,7 +106,9 @@ gulp.task('browser-sync',function(){
     port: 3000,
     server: { 
       baseDir: ['app/dist'],
-      index: 'html-en/index.html'
+      // which html show in server
+      //index: 'html-en/index.html'
+      index: 'html/index.html'
     }
   });
 });
