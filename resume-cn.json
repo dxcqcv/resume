@@ -31,7 +31,7 @@
   "education":[
     {
     "time":"华东师范大学2003 - 2005",
-    "major":"华东师范大学华光学院（大专）结业"
+    "major":"华东师范大学结业"
   },
     {
     "time":"复旦大学2011.06",
@@ -44,6 +44,22 @@
   }
   ],
   "projects":[
+    {
+    "name":"跨域Demo",
+    "source":"https://github.com/dxcqcv/cross-domain-with-koa",
+    "demo":"",
+    "description":[
+      "使用nodeJS,Koa2,webpack构建cors,jsonp,domain,postmessage实现跨域"
+    ]
+  },
+    {
+    "name":"自动模板生成器",
+    "source":"https://github.com/dxcqcv/generator-webpack-humble",
+    "demo":"",
+    "description":[
+      "使用yeoman,webpack,stylus和pug构建自动模板生成器"
+    ]
+  },
     {
     "name":"全栈Demo网站",
     "source":"https://github.com/dxcqcv/shanghaihuina",
@@ -63,7 +79,7 @@
     {
     "name":"个人简历",
     "source":"https://github.com/dxcqcv/resume",
-    "demo":"",
+    "demo":"https://dxcqcv.github.io/resume/html/index.html",
     "description":[
       "使用webpack,gulp,stylus,pug构建个人简历"
     ]

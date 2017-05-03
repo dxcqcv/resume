@@ -32,7 +32,8 @@ mixin projects_content(itemlist,misc)
       dl.detail-list
         dt 
           a.project-links(href=item.source,target="_blank") #{misc.source}
-          a.project-links(href=item.demo,target="_blank") Demo
+          unless (!item.demo)
+            a.project-links(href=item.demo,target="_blank") Demo
         each des in item.description
           dd= des
           

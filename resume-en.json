@@ -35,6 +35,22 @@
   }],
   "projects":[
     {
+      "name":"Cross domain Demo",
+      "source":"https://github.com/dxcqcv/cross-domain-with-koa",
+      "demo":"",
+      "description":[
+        "Used nodeJS,Koa2,webpack to implement cors,jsonp,domain,postmessage"
+      ]
+    },
+    {
+      "name":"generator demo environment",
+      "source":"https://github.com/dxcqcv/generator-webpack-humble",
+      "demo":"",
+      "description":[
+        "Used yeoman,webpack,stylus and pug to auto build a environment where make code demo easily"
+      ]
+    },
+    {
     "name":"MEAN website",
     "source":"https://github.com/dxcqcv/shanghaihuina",
     "demo":"https://shanghaihuina.herokuapp.com/",
