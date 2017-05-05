@@ -96,30 +96,12 @@
   },
   {
     "place":"Yesky.com",
-    "start":"2010",
+    "start":"2007",
     "end":"2012",
     "position":"web editor",
     "description": [
       "To write testable articles about smart phone, soundBox etc.",
       "To write some interview report about dealers."
-    ]
-  },
-  {
-    "place":"Ocj.com.cn",
-    "start":"2007",
-    "end":"2010",
-    "position":"technical support",
-    "description": [
-      "To install and maintain HP PC."
-    ]
-  },
-  {
-    "place":"Shanghai yibao",
-    "start":"2005",
-    "end":"2007",
-    "position":"editor",
-    "description": [
-      "Edited and composed newspapers."
     ]
   }
   ]
