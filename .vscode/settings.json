@@ -8,5 +8,5 @@
     "editor.renderIndentGuides": true,
     "files.autoSave": "onFocusChange",
     "puglint.enable":true,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 2
   }

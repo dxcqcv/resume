@@ -87,6 +87,17 @@
   ],
   "experience":[
     {
+    "place":"中软国际有限公司",
+    "start":"2017.5",
+    "end":"至今",
+    "position":"前端开发",
+    "description": [
+      "外派到平安壹钱包前端运营组",
+      "使用node.js, muse-ui和vue搭建自动切图工具",
+      "使用koa, object.js, mysql, vue, vuetify, axios, archiver搭建运营模板快速搭建平台"
+    ] 
+  },
+    {
     "place":"新奥能源服务(上海)有限公司",
     "start":"2014.3",
     "end":"2017.3",

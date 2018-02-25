@@ -77,6 +77,15 @@
   ],
   "experience":[
     {
+    "place":"Middle soft company",
+    "start":"2017.5",
+    "end":"now",
+    "position":"Front-End",
+    "description": [
+      "Related technology: React.js, Vue, Mysql, Objection.js, Node.js, MongoDB, gulp and webpack"
+    ] 
+  },
+    {
     "place":"ENN Intelligent Energy Group",
     "start":"2014.3",
     "end":"2017.3",
