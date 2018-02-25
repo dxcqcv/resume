@@ -4,7 +4,7 @@ written resume online with webpack, jade and stylus.
 # Usage
 * `npm install` for install all package
 * `gulp` just for develop
-* `NODE_ENV=production gulp depoly` for make whole webpage to gh 
+* `NODE_ENV=production gulp deploy` for make whole webpage to gh 
 
 
 # TODO
