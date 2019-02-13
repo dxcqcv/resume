@@ -4,12 +4,7 @@
   "description": "shang wen long's resume web",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp",
-    "dev": "NODE_ENV=production gulp deploy",
-    "tohtml": "gulp html",
-    "tohtmlen": "gulp html-en",
-    "dev": "gulp deploy"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

@@ -53,7 +53,7 @@
     ]
   },
     {
-    "name":"yoman快速react和vue生成工具",
+    "name":"yoman脚手架生成react和vue项目",
     "source":"https://github.com/dxcqcv/generator-webpack-humble",
     "demo":"",
     "description":[
