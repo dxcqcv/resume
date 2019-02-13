@@ -17,13 +17,12 @@
   },
   "personal":[{
     "description":[
-      "Expertly using semantic HTML and CSS to build complex web layout.",
-      "Understanding vanilla `javascript` and `CSS`, so can find and fix bugs quickly.",
+      "Expertly using `react` and `vue` to build complex web layout.",
+      "Use yoman and webapck 4 make a build react and vue env open source tools",
+      "Know about Jest to test react and vue",
       "Prefer to use `pug`, `stylus`, `postCSS`, `babel`,`gulp` and `webpack`,`git` etc tools to make workflow more efficiency.",
-      "Having little experience about `nodeJs`,`express`,`mongoDB`,`reactJS`,`three.js`,`Jenkins`",
-      "Know what is `XSS`，`CSRF`，`SQL`.",
-      "Play `arch linux` on `Raspberry PI 2` and have base knowledge about linux OS",
-      "Make simple design using Photoshop."
+      "Having experience about `nodeJs`,`express`,`mongoDB`,`reactJS`,`mysql`,`docker`",
+      "Play `arch linux` on `Raspberry PI 2` and have base knowledge about linux OS"
     ]
   }],
    
@@ -43,11 +42,11 @@
       ]
     },
     {
-      "name":"generator demo environment",
+      "name":"generator react or vue environment with yoman",
       "source":"https://github.com/dxcqcv/generator-webpack-humble",
       "demo":"",
       "description":[
-        "Used yeoman,webpack,stylus and pug to auto build a environment where make code demo easily"
+        "Used yeoman,webpack,to auto build react or vue environment"
       ]
     },
     {

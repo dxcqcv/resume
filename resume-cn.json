@@ -17,15 +17,15 @@
   },
   "personal":[{
     "description":[
-      "能够编写语义化的`HTML`，和结构化的`CSS`，实现复杂布局",
-      "熟悉`Vanilla JS`和`CSS`的使用，以完成快速网页编写",
+      "能够使用`react`和`vue`，实现复杂页面",
+      "使用yoman和webpack4搭建开源的脚手架",
+      "使用jest测试react和vue",
+      "使用`vue`,`koa2`,`nodeJs`,`mysql`搭建过模块化快速搭建平台",
+      "使用`vue`,`koa2`,`nodeJs`,`mongoDB`,`docker`搭建过自动化切图工具",
       "日常使用`stylus`,`postCSS`，`jade`等处理工具，高效编写网页",
       "使用`gulp`,`webpack`等工具改进工作流",
-      "对`nodeJs`,`express`,`mongoDB`,`reactJS`,`jenkins`有一定了解",
-      "具备基本网络安全知识，`XSS`，`CSRF`，`SQL`注入等",
-      "安装并使用过`arch linux`和`Raspberry PI 2`，对`Linux`有一定了解",
-      "了解`git`命令和团队开发",
-      "能使用photoshop完成简单设计"
+      "安装并使用过`arch linux`，对`Linux`有一定了解",
+      "了解`git`命令和团队开发"
     ]
   }],
   "education":[
@@ -53,11 +53,11 @@
     ]
   },
     {
-    "name":"自动模板生成器",
+    "name":"yoman快速react和vue生成工具",
     "source":"https://github.com/dxcqcv/generator-webpack-humble",
     "demo":"",
     "description":[
-      "使用yeoman,webpack,stylus和pug构建自动模板生成器"
+      "使用yeoman和webpack快速生成react和vue项目"
     ]
   },
     {
