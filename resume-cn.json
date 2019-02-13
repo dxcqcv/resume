@@ -18,8 +18,8 @@
   "personal":[{
     "description":[
       "能够使用`react`和`vue`，实现复杂页面",
-      "使用yoman和webpack4搭建开源的脚手架",
-      "使用jest测试react和vue",
+      "使用`yoman`和`webpack4`搭建开源的脚手架",
+      "使用`jest`测试`react`和`vue`",
       "使用`vue`,`koa2`,`nodeJs`,`mysql`搭建过模块化快速搭建平台",
       "使用`vue`,`koa2`,`nodeJs`,`mongoDB`,`docker`搭建过自动化切图工具",
       "日常使用`stylus`,`postCSS`，`jade`等处理工具，高效编写网页",

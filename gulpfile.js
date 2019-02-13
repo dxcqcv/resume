@@ -117,4 +117,5 @@ gulp.task('browser-sync',function(){
 /**
  * default task that build 
  */
+// gulp.task('default',gulp.series('static','html','html-en','webpack','browser-sync'));
 gulp.task('default',gulp.series('static','html','html-en','webpack','browser-sync'));
