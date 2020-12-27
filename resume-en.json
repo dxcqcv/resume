@@ -1,22 +1,25 @@
 {
-  "data_lang":"en",
-  "title":"Roy Shang's CV",
-  "info":{
-    "name":"Roy Shang",
-    "title":"Frontend Developer",
-    "contact":{
-      "birthday-cake":"1984-11-04",
+  "data_lang": "en",
+  "title": "Roy Shang's CV",
+  "info": {
+    "name": "Roy Shang",
+    "title": "Frontend Developer",
+    "contact": {
+      "birthday-cake": "1984-11-04",
       "phone": "18918046351",
-      "email":"dxcqcv@gmail.com",
-      "github":"https://github.com/dxcqcv",
-      "wechat":{
-       "id":"dxcqcv" ,
-       "qrcode":"../static/shangwenlong-wechat.svg"
+      "email": "dxcqcv@gmail.com",
+      "github": "https://github.com/dxcqcv",
+      "wechat": {
+        "id": "dxcqcv",
+        "qrcode": "../static/shangwenlong-wechat.svg"
       }
     }
   },
-  "personal":[{
-    "description":[
+  "personal": [{
+    "description": [
+      "Build a serverless server support `Koa2` and `Express` base on `kubeless runtime`",
+      "Make weapp mini program and h5 pages by Taro",
+      "Coding with `Typescript`",
       "Expertly using `react` and `vue` to build complex web layout.",
       "Use `yoman` and `webapck 4` make a build `react` and `vue` env open source tools",
       "Know about Jest to test react and `vue`",
@@ -25,92 +28,89 @@
       "Play `arch linux` on `Raspberry PI 2` and have base knowledge about linux OS"
     ]
   }],
-   
-  
-  "education":[
-    {
-    "time":"2016.12 graduate student at adult self-study Shanghai Fu Dan University",
-    "major":"Major in Computer information administration"
+
+
+  "education": [{
+    "time": "2016.12 graduate student at adult self-study Shanghai Fu Dan University",
+    "major": "Major in Computer information administration"
   }],
-  "projects":[
-    {
-      "name":"Cross domain Demo",
-      "source":"https://github.com/dxcqcv/cross-domain-with-koa",
-      "demo":"",
-      "description":[
+  "projects": [{
+      "name": "Cross domain Demo",
+      "source": "https://github.com/dxcqcv/cross-domain-with-koa",
+      "demo": "",
+      "description": [
         "Used nodeJS,Koa2,webpack to implement cors,jsonp,domain,postmessage"
       ]
     },
     {
-      "name":"generator react or vue environment with yoman",
-      "source":"https://github.com/dxcqcv/generator-webpack-humble",
-      "demo":"",
-      "description":[
+      "name": "generator react or vue environment with yoman",
+      "source": "https://github.com/dxcqcv/generator-webpack-humble",
+      "demo": "",
+      "description": [
         "Used yeoman,webpack,to auto build react or vue environment"
       ]
     },
     {
-    "name":"MEAN website",
-    "source":"https://github.com/dxcqcv/shanghaihuina",
-    "demo":"https://shanghaihuina.herokuapp.com/",
-    "description":[
-      "Used node.js, Express ,AngularJS and mongoDB"
-    ]
-  },
+      "name": "MEAN website",
+      "source": "https://github.com/dxcqcv/shanghaihuina",
+      "demo": "https://shanghaihuina.herokuapp.com/",
+      "description": [
+        "Used node.js, Express ,AngularJS and mongoDB"
+      ]
+    },
     {
-    "name":"Personal blog",
-    "source":"https://github.com/dxcqcv/dxcqcv.github.io",
-    "demo":"https://dxcqcv.github.io/",
-    "description":[
-      "Used webpack, jekyll, gulp, stylus, and pug"
-    ]
-  },
+      "name": "Personal blog",
+      "source": "https://github.com/dxcqcv/dxcqcv.github.io",
+      "demo": "https://dxcqcv.github.io/",
+      "description": [
+        "Used webpack, jekyll, gulp, stylus, and pug"
+      ]
+    },
     {
-    "name":"Personal online CV",
-    "source":"https://github.com/dxcqcv/resume",
-    "demo":"https://dxcqcv.github.io/resume/html-en/index.html",
-    "description":[
-      "Used webpack gulp stylus and pug"
-    ]
-  }
+      "name": "Personal online CV",
+      "source": "https://github.com/dxcqcv/resume",
+      "demo": "https://dxcqcv.github.io/resume/html-en/index.html",
+      "description": [
+        "Used webpack gulp stylus and pug"
+      ]
+    }
   ],
-  "experience":[
+  "experience": [{
+      "place": "YQB PingAnFu",
+      "start": "2017.5",
+      "end": "now",
+      "position": "Front-End",
+      "description": [
+        "Related technology: React.js, Vue, Mysql, Objection.js, Node.js, MongoDB, gulp and webpack"
+      ]
+    },
     {
-    "place":"Middle soft company",
-    "start":"2017.5",
-    "end":"now",
-    "position":"Front-End",
-    "description": [
-      "Related technology: React.js, Vue, Mysql, Objection.js, Node.js, MongoDB, gulp and webpack"
-    ] 
-  },
+      "place": "ENN Intelligent Energy Group",
+      "start": "2014.3",
+      "end": "2017.3",
+      "position": "Front-End",
+      "description": [
+        "Related technology: jQuery, Bootstrap, Node.js, MongoDB, gulp and webpack"
+      ]
+    },
     {
-    "place":"ENN Intelligent Energy Group",
-    "start":"2014.3",
-    "end":"2017.3",
-    "position":"Front-End",
-    "description": [
-      "Related technology: jQuery, Bootstrap, Node.js, MongoDB, gulp and webpack"
-    ] 
-  },
-  {
-    "place":"San Die Information technology co., ltd",
-    "start":"2012.5",
-    "end":"2014.2",
-    "position":"Front-End",
-    "description":[
-      "Related technology: HTML, CSS,jQuery,Photoshop"
-    ]
-  },
-  {
-    "place":"Yesky.com",
-    "start":"2007",
-    "end":"2012",
-    "position":"web editor",
-    "description": [
-      "To write testable articles about smart phone, soundBox etc.",
-      "To write some interview report about dealers."
-    ]
-  }
+      "place": "San Die Information technology co., ltd",
+      "start": "2012.5",
+      "end": "2014.2",
+      "position": "Front-End",
+      "description": [
+        "Related technology: HTML, CSS,jQuery,Photoshop"
+      ]
+    },
+    {
+      "place": "Yesky.com",
+      "start": "2007",
+      "end": "2012",
+      "position": "web editor",
+      "description": [
+        "To write testable articles about smart phone, soundBox etc.",
+        "To write some interview report about dealers."
+      ]
+    }
   ]
 }
