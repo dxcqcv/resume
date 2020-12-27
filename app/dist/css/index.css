@@ -7,7 +7,7 @@
 @font-face {
   font-family: 'FontAwesome';
   src: url(../static/fonts/fontawesome-webfont-a247f435.eot);
-  src: url(../static/fonts/fontawesome-webfont-a247f435.eot?#iefix&v=4.6.3) format('embedded-opentype'), url(../static/fonts/fontawesome-webfont-a1a450ea.woff2) format('woff2'), url(../static/fonts/fontawesome-webfont-f84ffa8d.woff) format('woff'), url(../static/fonts/fontawesome-webfont-9f5388fa.ttf) format('truetype'), url(../static/fonts/fontawesome-webfont-6c4c3504.svg#fontawesomeregular) format('svg');
+  src: url(../static/fonts/fontawesome-webfont-a247f435.eot?#iefix&v=4.6.3) format('embedded-opentype'), url(../static/fonts/fontawesome-webfont-a1a450ea.woff2) format('woff2'), url(../static/fonts/fontawesome-webfont-f84ffa8d.woff) format('woff'), url(../static/fonts/fontawesome-webfont-9f5388fa.ttf) format('truetype'), url(../static/fonts/fontawesome-webfont-5de86af4.svg#fontawesomeregular) format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2454,7 +2454,6 @@ img {
 }
 a {
   text-decoration: none;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 a:link,
@@ -2603,16 +2602,14 @@ article {
   address {
     position: absolute;
     top: 50%;
-    -webkit-transform: perspective(1px) translateY(-50%);
-            transform: perspective(1px) translateY(-50%);
+    transform: perspective(1px) translateY(-50%);
   }
 }
 @media (max-width: 31.25rem) {
   address {
     position: static;
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
+    -ms-transform: translateY(0);
+        transform: translateY(0);
     padding-bottom: 20px;
     padding-bottom: 1.25rem;
   }
@@ -2620,17 +2617,15 @@ article {
 .info {
   position: absolute;
   top: 50%;
-  -webkit-transform: perspective(1px) translateY(-50%);
-          transform: perspective(1px) translateY(-50%);
+  transform: perspective(1px) translateY(-50%);
   right: 80px;
   right: 5rem;
 }
 @media (max-width: 56.25rem) {
   .info {
     position: static;
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
+    -ms-transform: translateY(0);
+        transform: translateY(0);
   }
 }
 .lang-panel {

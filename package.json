@@ -49,7 +49,9 @@
     "url-loader": "^0.5.7",
     "webpack": "~2.2.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "typescript": "^4.1.3"
+  },
   "bugs": {
     "url": "https://github.com/dxcqcv/resume/issues"
   },
