@@ -15,23 +15,26 @@
       }
     }
   },
-  "personal": [{
-    "description": [
-      "扩展`kubeless 运行时`构建一个支持`KOA2`和`Express`的`serverless`服务",
-      "使用`Taro`构建微信小程序和H5页面，实现一码多端",
-      "了解并使用`Typescript`开发日常项目",
-      "能够使用`react`和`vue`，实现复杂页面",
-      "使用`yoman`和`webpack4`搭建开源的脚手架",
-      "使用`jest`测试`react`和`vue`",
-      "使用`vue`,`koa2`,`nodeJs`,`mysql`搭建过模块化快速搭建平台",
-      "使用`vue`,`koa2`,`nodeJs`,`mongoDB`,`docker`搭建过自动化切图工具",
-      "日常使用`stylus`,`postCSS`，`pug`等处理工具，高效编写网页",
-      "使用`gulp`,`webpack`等工具改进工作流",
-      "安装并使用过`arch linux`，对`Linux`有一定了解",
-      "了解`git`命令和团队开发"
-    ]
-  }],
-  "education": [{
+  "personal": [
+    {
+      "description": [
+        "扩展`kubeless 运行时`构建一个支持`KOA2`和`Express`的`serverless`服务",
+        "使用`Taro`构建微信小程序和H5页面，实现一码多端",
+        "了解并使用`Typescript`开发日常项目",
+        "能够使用`react`和`vue`，实现复杂页面",
+        "使用`yoman`和`webpack4`搭建开源的脚手架",
+        "使用`jest`测试`react`和`vue`",
+        "使用`vue`,`koa2`,`nodeJs`,`mysql`搭建过模块化快速搭建平台",
+        "使用`vue`,`koa2`,`nodeJs`,`mongoDB`,`docker`搭建过自动化切图工具",
+        "日常使用`stylus`,`postCSS`，`pug`等处理工具，高效编写网页",
+        "使用`gulp`,`webpack`等工具改进工作流",
+        "安装并使用过`arch linux`，对`Linux`有一定了解",
+        "了解`git`命令和团队开发"
+      ]
+    }
+  ],
+  "education": [
+    {
       "time": "华东师范大学2003 - 2007",
       "major": "华东师范大学结业"
     },
@@ -45,7 +48,16 @@
       "language": "PETS-3"
     }
   ],
-  "projects": [{
+  "projects": [
+    {
+      "name": "在线word转html工具平台",
+      "source": "https://github.com/dxcqcv/word2html",
+      "demo": "https://dxcqcv.github.io/word2html/index.html#/",
+      "description": [
+        "使用typescript,react,webpack5,css-in-js构建Word转HTML在线平台"
+      ]
+    },
+    {
       "name": "跨域Demo",
       "source": "https://github.com/dxcqcv/cross-domain-with-koa",
       "demo": "",
@@ -57,36 +69,29 @@
       "name": "yoman脚手架生成react和vue项目",
       "source": "https://github.com/dxcqcv/generator-webpack-humble",
       "demo": "",
-      "description": [
-        "使用yeoman和webpack快速生成react和vue项目"
-      ]
+      "description": ["使用yeoman和webpack快速生成react和vue项目"]
     },
     {
       "name": "全栈Demo网站",
       "source": "https://github.com/dxcqcv/shanghaihuina",
       "demo": "https://shanghaihuina.herokuapp.com/",
-      "description": [
-        "使用nodeJS,Express,Angular和mongoDB构建网站"
-      ]
+      "description": ["使用nodeJS,Express,Angular和mongoDB构建网站"]
     },
     {
       "name": "个人博客",
       "source": "https://github.com/dxcqcv/dxcqcv.github.io",
       "demo": "https://dxcqcv.github.io/",
-      "description": [
-        "使用webpack,jekyll,gulp,stylus,pug构建个人blog"
-      ]
+      "description": ["使用webpack,jekyll,gulp,stylus,pug构建个人blog"]
     },
     {
       "name": "个人简历",
       "source": "https://github.com/dxcqcv/resume",
       "demo": "https://dxcqcv.github.io/resume/html/index.html",
-      "description": [
-        "使用webpack,gulp,stylus,pug构建个人简历"
-      ]
+      "description": ["使用webpack,gulp,stylus,pug构建个人简历"]
     }
   ],
-  "experience": [{
+  "experience": [
+    {
       "place": "平安壹钱包",
       "start": "2017.5",
       "end": "至今",

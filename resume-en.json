@@ -15,26 +15,36 @@
       }
     }
   },
-  "personal": [{
-    "description": [
-      "Build a serverless server support `Koa2` and `Express` base on `kubeless runtime`",
-      "Make weapp mini program and h5 pages by Taro",
-      "Coding with `Typescript`",
-      "Expertly using `react` and `vue` to build complex web layout.",
-      "Use `yoman` and `webapck 4` make a build `react` and `vue` env open source tools",
-      "Know about Jest to test react and `vue`",
-      "Prefer to use `pug`, `stylus`, `postCSS`, `babel`,`gulp` and `webpack`,`git` etc tools to make workflow more efficiency.",
-      "Having experience about `nodeJs`,`express`,`mongoDB`,`reactJS`,`mysql`,`docker`",
-      "Play `arch linux` on `Raspberry PI 2` and have base knowledge about linux OS"
-    ]
-  }],
+  "personal": [
+    {
+      "description": [
+        "Build a serverless server support `Koa2` and `Express` base on `kubeless runtime`",
+        "Make weapp mini program and h5 pages by Taro",
+        "Coding with `Typescript`",
+        "Expertly using `react` and `vue` to build complex web layout.",
+        "Use `yoman` and `webapck 4` make a build `react` and `vue` env open source tools",
+        "Know about Jest to test react and `vue`",
+        "Prefer to use `pug`, `stylus`, `postCSS`, `babel`,`gulp` and `webpack`,`git` etc tools to make workflow more efficiency.",
+        "Having experience about `nodeJs`,`express`,`mongoDB`,`reactJS`,`mysql`,`docker`",
+        "Play `arch linux` on `Raspberry PI 2` and have base knowledge about linux OS"
+      ]
+    }
+  ],
 
-
-  "education": [{
-    "time": "2016.12 graduate student at adult self-study Shanghai Fu Dan University",
-    "major": "Major in Computer information administration"
-  }],
-  "projects": [{
+  "education": [
+    {
+      "time": "2016.12 graduate student at adult self-study Shanghai Fu Dan University",
+      "major": "Major in Computer information administration"
+    }
+  ],
+  "projects": [
+    {
+      "name": "word2html online",
+      "source": "https://github.com/dxcqcv/word2html",
+      "demo": "https://dxcqcv.github.io/word2html/index.html#/",
+      "description": ["Build with typescript, react and css-in-js"]
+    },
+    {
       "name": "Cross domain Demo",
       "source": "https://github.com/dxcqcv/cross-domain-with-koa",
       "demo": "",
@@ -54,28 +64,23 @@
       "name": "MEAN website",
       "source": "https://github.com/dxcqcv/shanghaihuina",
       "demo": "https://shanghaihuina.herokuapp.com/",
-      "description": [
-        "Used node.js, Express ,AngularJS and mongoDB"
-      ]
+      "description": ["Used node.js, Express ,AngularJS and mongoDB"]
     },
     {
       "name": "Personal blog",
       "source": "https://github.com/dxcqcv/dxcqcv.github.io",
       "demo": "https://dxcqcv.github.io/",
-      "description": [
-        "Used webpack, jekyll, gulp, stylus, and pug"
-      ]
+      "description": ["Used webpack, jekyll, gulp, stylus, and pug"]
     },
     {
       "name": "Personal online CV",
       "source": "https://github.com/dxcqcv/resume",
       "demo": "https://dxcqcv.github.io/resume/html-en/index.html",
-      "description": [
-        "Used webpack gulp stylus and pug"
-      ]
+      "description": ["Used webpack gulp stylus and pug"]
     }
   ],
-  "experience": [{
+  "experience": [
+    {
       "place": "YQB PingAnFu",
       "start": "2017.5",
       "end": "now",
@@ -98,9 +103,7 @@
       "start": "2012.5",
       "end": "2014.2",
       "position": "Front-End",
-      "description": [
-        "Related technology: HTML, CSS,jQuery,Photoshop"
-      ]
+      "description": ["Related technology: HTML, CSS,jQuery,Photoshop"]
     },
     {
       "place": "Yesky.com",
