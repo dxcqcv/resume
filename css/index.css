@@ -2674,8 +2674,8 @@ article {
   width: 8.125rem;
   height: 130px;
   height: 8.125rem;
-  margin-left: -10px;
-  margin-left: -0.625rem;
+  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 @media (max-width: 56.25rem) {
   .qrcode-img {
