@@ -62,6 +62,9 @@ mixin myInfo(itemlist,misc)
               a(href=item.qrcode target="_blank") #{item.id}
               br
               +qrcode(item) 
+            else if(key == 'file-word-o')
+              i(class="fa fa-"+key+"" aria-hidden="true") 
+              a(href=item.URL target="_blank") #{item.name}
             else 
               i(class="fa fa-"+key+"" aria-hidden="true") 
               a(href=item target="_blank") #{item}

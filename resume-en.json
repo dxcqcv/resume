@@ -9,6 +9,10 @@
       "phone": "18918046351",
       "email": "dxcqcv@gmail.com",
       "github": "https://github.com/dxcqcv",
+      "file-word-o": {
+        "name": "word cv",
+        "URL": "../static/cv/cv_en.docx"
+      },
       "wechat": {
         "id": "dxcqcv",
         "qrcode": "../static/resume-qrcode-en.png"
@@ -18,15 +22,16 @@
   "personal": [
     {
       "description": [
-        "Build a serverless server support `Koa2` and `Express` base on `kubeless runtime`",
-        "Make weapp mini program and h5 pages by Taro",
-        "Coding with `Typescript`",
-        "Expertly using `react` and `vue` to build complex web layout.",
-        "Use `yoman` and `webapck 4` make a build `react` and `vue` env open source tools",
-        "Know about Jest to test react and `vue`",
-        "Prefer to use `pug`, `stylus`, `postCSS`, `babel`,`gulp` and `webpack`,`git` etc tools to make workflow more efficiency.",
-        "Having experience about `nodeJs`,`express`,`mongoDB`,`reactJS`,`mysql`,`docker`",
-        "Play `arch linux` on `Raspberry PI 2` and have base knowledge about linux OS"
+        "Managing a team of 10 front-end developers, sorting out requirements, standardising development processes, code reviews and troubleshooting online issues",
+        "Daily use of typescript type derivation to reduce low-level errors in development",
+        "Maintain scaffolding for typescript, eslint, prettier, husky, webpack, react, redux to improve team development efficiency",
+        "Use whistle tools to catch package mocks and quickly debug or locate interface errors",
+        "Use taro to develop miniprogram, enabling multiple outputs of one set of code",
+        "Develop native pages using react native and have a good understanding of it",
+        "Knowledge of nodeJs, express, mongoDB, reactJS, three.js, Jenkins",
+        "Basic knowledge of web security, XSS, CSRF, SQL injection, etc.",
+        "Have installed and used arch linux and Raspberry PI 2 and have a good understanding of Linux",
+        "Knowledge of git commands and team development"
       ]
     }
   ],
@@ -42,7 +47,7 @@
       "name": "word2html online",
       "source": "https://github.com/dxcqcv/word2html",
       "demo": "https://dxcqcv.github.io/word2html/index.html#/",
-      "description": ["Build with typescript, react and css-in-js"]
+      "description": ["Build with typescript, react and styled-components"]
     },
     {
       "name": "Cross domain Demo",
@@ -83,10 +88,14 @@
     {
       "place": "YQB PingAnFu",
       "start": "2017.5",
-      "end": "now",
+      "end": "2022.1",
       "position": "Front-End",
       "description": [
-        "Related technology: React.js, Vue, Mysql, Objection.js, Node.js, MongoDB, gulp and webpack"
+        "Manage a team of 10 front-end developers, mainly responsible for marketing h5 and mini-programs, pc portals, cms content management systems, etc.",
+        "Customised front-end scaffolding for the team, based on typescript, eslint, prettier, husky, webpack, react, redux with in-house methods to help the team develop quickly",
+        "Participate in various business requirements reviews, develop team development processes (xmind and flow charts) and coordinate with all parties to implement agile development step by step",
+        "Build automatic cutout tools using node.js, muse-ui and vue",
+        "Build operational templates using koa, object.js, mysql, vue, vuetify, axios, archiver to build a quick platform"
       ]
     },
     {
