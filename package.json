@@ -35,7 +35,7 @@
     "postcss-opacity": "^4.0.0",
     "postcss-vmin": "^2.0.0",
     "postcss-will-change": "^1.1.0",
-    "pug": "^2.0.0-beta6",
+    "pug": "^3.0.1",
     "pug-html-loader": "^1.0.8",
     "pug-lint": "^2.3.0",
     "pug-loader": "^2.1.0",
