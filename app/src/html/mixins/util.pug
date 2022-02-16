@@ -22,7 +22,7 @@ mixin education_content(itemlist,misc)
         span= item.time
       p.major #{misc.major}：#{item.major}
       if(item.language)
-        p.language #{misc.language-level}：#{item.language}
+        p.language #{misc.level}：#{item.language}
 
 mixin projects_content(itemlist,misc)
   each item in itemlist
