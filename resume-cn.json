@@ -47,6 +47,49 @@
   ],
   "projects": [
     {
+      "name": "模块化搭建平台",
+      "description": [
+        "主力开发，将逻辑相对固定的业务抽象出来，构建成模块化平台，让产品业务可以脱离开发自行修改编辑最终生成页面，提高业务效率，涉及技术：vue2, vuetify, axios, koa2, Objection.js, MySQL"
+      ]
+    },
+
+    {
+      "name": "自动切图工具",
+      "description": [
+        "独立开发，支持上传背景图片并自动切割以加速加载，通过鼠标操作动态生成跳转区域，涉及技术： koa2, MongoDB, sharp.js"
+      ]
+    },
+    {
+      "name": "一码多端",
+      "description": [
+        "参与开发，对Taro进行二次封装改造，增加业务组件功能，实现一套代码支持多端场景，涉及技术： Taro"
+      ]
+    },
+    {
+      "name": "前端灰度发布流程",
+      "description": [
+        "参与开发，设计推行前端根据版本接口动态调用不同版本的前端代码，解决前端由于CDN无法灰度发布的问题，涉及技术：前后端API版本等配合"
+      ]
+    },
+    {
+      "name": "AB Test平台",
+      "description": [
+        "参与开发，前端将不同版本的代码通过SDK上传给后台大数据，并根据大数据特定算法，对用户实现AB Test, 涉及技术： SDK"
+      ]
+    },
+    {
+      "name": "业务脚手架",
+      "description": [
+        "主力开发，根据业务需求搭建快速生成脚手架，封装业务代码，统一eslint 和webpack插件，如postCSS等，涉及技术：webpack, axios, postCSS, typescript"
+      ]
+    },
+    {
+      "name": "SFF平台",
+      "description": [
+        "参与开发，通过docker容器和kubeless再次封装node代码，并部署在k8s上，以生成云函数方便业务调用，涉及技术：docker, node.js, kubeless"
+      ]
+    },
+    {
       "name": "在线word转html工具平台",
       "source": "https://github.com/dxcqcv/word2html",
       "demo": "https://dxcqcv.github.io/word2html/index.html#/",

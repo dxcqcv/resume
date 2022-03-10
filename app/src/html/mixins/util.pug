@@ -31,7 +31,8 @@ mixin projects_content(itemlist,misc)
         span= item.name
       dl.detail-list
         dt 
-          a.project-links(href=item.source,target="_blank") #{misc.source}
+          unless (!item.source)
+            a.project-links(href=item.source,target="_blank") #{misc.source}
           unless (!item.demo)
             a.project-links(href=item.demo,target="_blank") Demo
         each des in item.description

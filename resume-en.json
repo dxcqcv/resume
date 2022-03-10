@@ -11,7 +11,7 @@
       "github": "https://github.com/dxcqcv",
       "file-word-o": {
         "name": "word cv",
-        "URL": "../static/cv/cv_en.docx"
+        "URL": "../static/cv/cv_en.pdf"
       },
       "wechat": {
         "id": "dxcqcv",
@@ -42,6 +42,50 @@
     }
   ],
   "projects": [
+    {
+      "name": "Building a modular platform",
+      "description": [
+        "Main development, the logic of the relatively fixed business abstraction, built into a modular platform, so that the product business can be separated from the development of their own modification and editing of the final generation of pages to improve business efficiency, involving technology: vue2, vuetify, axios, koa2, Objection.js, MySQL"
+      ]
+    },
+
+    {
+      "name": "Automatic image cutting tool",
+      "description": [
+        "Independently developed, supports uploading background images and automatically cutting them to speed up loading, dynamically generates jumping areas by mouse operation, technologies involved: koa2, MongoDB, sharp.js"
+      ]
+    },
+    {
+      "name": "One code, many ends",
+      "description": [
+        "Participated in the development of Taro, the second package transformation, adding business components, to achieve a set of code to support multi-terminal scenarios, involving technology: Taro"
+      ]
+    },
+    {
+      "name": "Front-end grayscale release process",
+      "description": [
+        "Participated in the development, design and implementation of front-end dynamically calling different versions of front-end code according to the version interface, solving the problem that the front-end could not be released in grayscale due to CDN, involving technology: front-end and back-end API versions, etc."
+      ]
+    },
+    {
+      "name": "AB Test Platform",
+      "description": [
+        "Participate in the development, the front-end will upload different versions of code through the SDK to the back-end big data, and according to the big data specific algorithm, to achieve AB Test for users, involving technology: AB Test SDK"
+      ]
+    },
+    {
+      "name": "Business Scaffolding",
+      "description": [
+        "Main development, build fast generation scaffolding according to business requirements, encapsulate business code, unify eslint and webpack plugins such as postCSS, etc., technologies involved: webpack, axios, postCSS, typescript"
+      ]
+    },
+    {
+      "name": "SFF platform",
+      "description": [
+        "Participate in development, encapsulate node.js code again through docker container and kubeless, and deploy on k8s to generate cloud functions for business calls, technologies involved: docker, node.js, kubeless"
+      ]
+    },
+
     {
       "name": "word2html online",
       "source": "https://github.com/dxcqcv/word2html",
