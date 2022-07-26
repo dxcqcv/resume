@@ -22,7 +22,12 @@
   "personal": [
     {
       "description": [
-        "Manage a team of 10 front-end developers, sorting out various requirements, standardizing the development process, code review, troubleshooting online issues",
+        "Proficiency in using node.js ORM to connect with mongodb or postgresql to build backend system",
+        "Proficiency in using Next.js front-end framework",
+        "Skilled in using react family bucket front-end development",
+        "Skilled in using Nest.js to develop backend",
+        "Good at vue + element-ui to build management platform",
+        "Good at catching and analyzing online exceptions using packet capture tools",
         "Maintain scaffolding for typescript, eslint, prettier, husky, webpack, react, redux to improve team development efficiency",
         "Use whistle tool to catch package mock and quickly debug or locate interface errors",
         "Familiar with WeChat mini program development, and use taro to develop applets to achieve a set of code output multiple ends",
@@ -128,6 +133,16 @@
     }
   ],
   "experience": [
+    {
+      "place": "iSoftStone International",
+      "start": "2022.6",
+      "end": "Present",
+      "position": "Front-End",
+      "description": [
+        "Responsible for the company's backend management platform, involving vue+element-ui",
+        "Responsible for the company's small application development, involving Taro.js"
+      ]
+    },
     {
       "place": "YQB PingAnFu",
       "start": "2019.5",

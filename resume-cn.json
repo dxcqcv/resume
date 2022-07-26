@@ -11,7 +11,7 @@
       "github": "https://github.com/dxcqcv",
       "file-word-o": {
         "name": "word版本简历",
-        "URL": "../static/cv/cv_cn.docx"
+        "URL": "../static/cv/cv_cn.pdf"
       },
       "wechat": {
         "id": "dxcqcv",
@@ -22,7 +22,12 @@
   "personal": [
     {
       "description": [
-        "管理10人的前端开发团队，梳理各类需求，规范开发流程，code review，排查线上问题",
+        "熟练使用node.js ORM 连接mongodb或postgresql 搭建后台系统",
+        "熟练使用Next.js前端框架",
+        "熟练使用react全家桶前端开发",
+        "熟练使用Nest.js开发后台",
+        "擅长vue + element-ui 搭建管理平台",
+        "擅长使用抓包工具捕获并分析在线异常",
         "维护typescript、eslint、prettier、husky、webpack、react、redux的脚手架，提升团队开发效率",
         "使用whistle工具进行抓包mock，快速联调或定位接口错误",
         "熟悉微信小程序开发，并使用taro开发小程序，实现一套代码多端输出",
@@ -131,6 +136,16 @@
     }
   ],
   "experience": [
+    {
+      "place": "软通国际",
+      "start": "2022.6",
+      "end": "至今",
+      "position": "前端开发",
+      "description": [
+        "负责公司后台管理平台，涉及vue+element-ui",
+        "负责公司小程序开发，涉及Taro.js"
+      ]
+    },
     {
       "place": "平安壹钱包",
       "start": "2019.5",
