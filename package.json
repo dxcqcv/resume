@@ -15,7 +15,7 @@
   "author": "Roy Shang <dxcqcv@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.29.1",
     "browser-sync-webpack-plugin": "^1.1.0",
     "clean-webpack-plugin": "^0.1.10",
     "cross-env": "^7.0.3",
