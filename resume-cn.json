@@ -137,9 +137,19 @@
   ],
   "experience": [
     {
-      "place": "软通国际",
-      "start": "2022.6",
+      "place": "雅诗兰黛",
+      "start": "2023.5",
       "end": "至今",
+      "position": "前端开发",
+      "description": [
+        "熟练使用react和vue技术栈，维护雅诗兰黛全球官网和其子品牌网站",
+        "主力参与多个品牌的微信小程序开发，包括MAC魅可，Bobbi Brown 芭比波朗等"
+       ]
+    },
+    {
+      "place": "新城控股",
+      "start": "2022.1",
+      "end": "2023.4",
       "position": "前端开发",
       "description": [
         "负责公司后台管理平台，涉及vue+element-ui",
@@ -148,9 +158,9 @@
     },
     {
       "place": "平安壹钱包",
-      "start": "2019.5",
+      "start": "2017.5",
       "end": "2022.1",
-      "position": "前端开发",
+      "position": "全栈开发",
       "description": [
         "管理10人的前端开发团队，主要负责营销h5和小程序、pc门户网站、cms内容管理系统等",
         "为团队定制前端脚手架，基于typescript、eslint、prettier、husky、webpack、react、redux配合公司内部方法，帮助团队快速开发",
@@ -161,19 +171,9 @@
       ]
     },
     {
-      "place": "中软国际",
-      "start": "2017.5",
-      "end": "2019.5",
-      "position": "前端开发",
-      "description": [
-        "主力开发搭建运营模板快速搭建no-code平台，使用koa2, object.js, mysql, vue, vuetify, axios, archiver等技术，无需开发参与，方便产品运营为公司搭建几百个活动页面",
-        "主力开发搭建自动切图工具，使用node.js, muse-ui和vue等技术，无需开发参与，方法产品和运营自主切图并生成几百个跳转页面"
-      ]
-    },
-    {
       "place": "新奥能源服务(上海)有限公司",
       "start": "2014.12",
-      "end": "2016.3",
+      "end": "2017.3",
       "position": "前端开发",
       "description": [
         "负责泛能云平台项目的前端开发，基于jQuery与Bootstrap实现前端效果,及数据交互",
@@ -184,19 +184,9 @@
       ]
     },
     {
-      "place": "三迭信息科技有限公司",
-      "start": "2014.8",
-      "end": "2014.12",
-      "position": "前端开发",
-      "description": [
-        "实现各种业务需求，根据设计稿完成前端页面",
-        "使用jquery实现前端页面效果"
-      ]
-    },
-    {
       "place": "上海天极立特广告信息有限公司",
-      "start": "2010.11",
-      "end": "2011.4",
+      "start": "2007.11",
+      "end": "2014.4",
       "position": "华东区网站编辑",
       "description": [
         "数码产品，包括手机，音箱，鼠标，键盘等产品测评",

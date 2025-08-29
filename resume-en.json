@@ -133,10 +133,19 @@
     }
   ],
   "experience": [
+        {
+      "place": "The Estée Lauder Companies Inc.",
+      "start": "2023.5",
+      "end": "now",
+      "position": "Front-End",
+      "description": [
+        "I am skilled in using react and vue technology stacks to maintain Estee Lauder's global official website and its sub-brand websites, and have been mainly involved in the development of WeChat mini-programs for a number of brands, including MAC Charming, Bobbi Brown and others."
+      ]
+    },
     {
-      "place": "iSoftStone International",
-      "start": "2022.6",
-      "end": "Present",
+      "place": "Seazen Holdings Co., Ltd. ",
+      "start": "2022.1",
+      "end": "2023.4",
       "position": "Front-End",
       "description": [
         "Responsible for the company's backend management platform, involving vue+element-ui",
@@ -144,10 +153,10 @@
       ]
     },
     {
-      "place": "YQB PingAnFu",
-      "start": "2019.5",
+      "place": "PingAn Pay YQB",
+      "start": "2017.5",
       "end": "2022.1",
-      "position": "Front-End",
+      "position": "Full-Stack",
       "description": [
         "Manage a team of 10 front-end developers, mainly responsible for marketing h5 and applets, pc portals, cms content management systems, etc",
         "Customize front-end scaffolding for the team, based on typescript, eslint, prettier, husky, webpack, react, redux with internal methods to help the team develop quickly",
@@ -158,35 +167,19 @@
       ]
     },
     {
-      "place": "Chinasoft International",
-      "start": "2017.5",
-      "end": "2019.5",
-      "position": "Front-End",
-      "description": [
-        "Main development to build operation template to quickly build no-code platform, using koa2, object.js, mysql, vue, vuetify, axios, archiver and other technologies, no need to develop involved, convenient for product operation to build hundreds of activity pages for the company",
-        "Mainly develop and build automatic cutting tools, using node.js, muse-ui and vue technologies, without development involvement, method product and operation independent cutting and generate hundreds of jump pages"
-      ]
-    },
-    {
       "place": "ENN Intelligent Energy Group",
       "start": "2014.12",
-      "end": "2016.3",
+      "end": "2017.3",
       "position": "Front-End",
       "description": [
-        "Related technology: jQuery, Bootstrap, Node.js, MongoDB, gulp and webpack"
+        "Traveled alone to Langfang to complete a large screen display project using technologies such as three.js and Unit3D",
+        "Implementing various businesses and completing static pages according to the design"
       ]
-    },
-    {
-      "place": "San Die Information technology co., ltd",
-      "start": "2014.8",
-      "end": "2014.12",
-      "position": "Front-End",
-      "description": ["Related technology: HTML, CSS,jQuery,Photoshop"]
     },
     {
       "place": "Yesky.com",
-      "start": "2010.11",
-      "end": "2011.4",
+      "start": "2007.11",
+      "end": "2014.4",
       "position": "web editor",
       "description": [
         "To write testable articles about smart phone, soundBox etc.",
