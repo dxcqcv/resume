@@ -48,6 +48,14 @@
   ],
   "projects": [
     {
+      "name": "3D Official Website Project",
+      "demo": "https://dxcqcv.github.io/abel-portal-show/",
+      "description": [
+        "For the official website of a large state-owned enterprise",
+        "Using three.js, and writing a large number of shader effects, embedding text and music, supporting 3D interactive operations"
+      ]
+    },
+    {
       "name": "Building a modular platform",
       "description": [
         "Main development, the logic of the relatively fixed business abstraction, built into a modular platform, so that the product business can be separated from the development of their own modification and editing of the final generation of pages to improve business efficiency, involving technology: vue2, vuetify, axios, koa2, Objection.js, MySQL"

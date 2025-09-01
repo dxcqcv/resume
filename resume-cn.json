@@ -52,6 +52,14 @@
   ],
   "projects": [
     {
+      "name": "3D官网项目",
+      "demo": "https://dxcqcv.github.io/abel-portal-show/",
+      "description": [
+        "为某个大型国企做的官网",
+        "使用three.js，并编写大量shader特效，内嵌文字和音乐，支持3d互动操作"
+      ]
+    },
+    {
       "name": "模块化搭建平台",
       "description": [
         "主力开发，将逻辑相对固定的业务抽象出来，构建成模块化平台，让产品业务可以脱离开发自行修改编辑最终生成页面，提高业务效率，涉及技术：vue2, vuetify, axios, koa2, Objection.js, MySQL"
