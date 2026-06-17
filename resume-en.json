@@ -3,7 +3,7 @@
   "title": "Roy Shang's CV",
   "info": {
     "name": "Roy Shang",
-    "title": "Frontend Developer",
+    "title": "Senior Frontend Developer",
     "contact": {
       "birthday-cake": "1984-11-04",
       "phone": "18918046351",
@@ -22,160 +22,175 @@
   "personal": [
     {
       "description": [
-        "Manage a team of 10 front-end developers, sorting out various requirements, standardizing the development process, code review, troubleshooting online issues",
-        "Maintain scaffolding for typescript, eslint, prettier, husky, webpack, react, redux to improve team development efficiency",
-        "Use whistle tool to catch package mock and quickly debug or locate interface errors",
-        "Familiar with WeChat mini program development, and use taro to develop applets to achieve a set of code output multiple ends",
-        "Develop native pages using react native and have a good understanding of rn",
-        "Knowledge of nodeJs, express, mongoDB, reactJS, three, js, Jenkins",
-        "Basic knowledge of web security, XSS, CSRF, SQL injection, etc.",
-        "Have installed and used arch linux and Raspberry PI 2 and have a good understanding of Linux",
-        "Knowledge of git commands and team development"
+        "Proficient in React and Next.js, skilled in Vue.js and Tailwind CSS for front-end development.",
+        "Proficient in Node.js, experienced in building backend services and RESTful APIs with Express, Koa2, Redis, MongoDB and MySQL.",
+        "Familiar with Taro, UniApp, native WeChat Mini Program and React Native, capable of multi-terminal development and mini program performance optimization.",
+        "Skilled in Three.js, R3F and shader programming, experienced in large-screen data visualization and 3D interactive development.",
+        "Adept at building front-end engineering systems with TypeScript, Redux, Mobx, TanStack Query, Husky, ESLint, Prettier and Jest.",
+        "Proficient in troubleshooting and debugging with Whistle, solid capability for front-end quality assurance.",
+        "Experienced in low-code platform development, component architecture design, module splitting and cross-project component reuse.",
+        "Capable of agile development, technical solution design, cross-department requirement alignment and technical sharing.",
+        "Basic knowledge of web security including XSS, CSRF and SQL injection, familiar with Git team collaboration."
       ]
     }
   ],
-
   "education": [
     {
-      "time": "2016.12 graduate student at adult self-study Shanghai Fu Dan University",
-      "major": "Major in Computer information administration"
+      "time": "Sep 2014 - Dec 2016",
+      "major": "Computer Information Management, Fudan University (Self-taught Bachelor, verifiable on Xuexin.cn)",
+      "language": "PETS-3"
+    },
+    {
+      "time": "Dec 2016 - Jun 2017",
+      "major": "Bachelor's Degree, Computer Information Management, Fudan University"
     }
   ],
   "projects": [
     {
-      "name": "Building a modular platform",
+      "name": "Low-Code Framework Component Enhancement",
       "description": [
-        "Main development, the logic of the relatively fixed business abstraction, built into a modular platform, so that the product business can be separated from the development of their own modification and editing of the final generation of pages to improve business efficiency, involving technology: vue2, vuetify, axios, koa2, Objection.js, MySQL"
-      ]
-    },
-
-    {
-      "name": "Automatic image cutting tool",
-      "description": [
-        "Independently developed, supports uploading background images and automatically cutting them to speed up loading, dynamically generates jumping areas by mouse operation, technologies involved: koa2, MongoDB, sharp.js"
+        "Built configurable low-code platforms for enterprise marketing campaigns and internal management systems. Extracted 12 core business components from requirements of over 50 clients. Implemented permission control and data linkage based on Next.js, NextAuth and React Query, and developed backend APIs with Node.js. Helped 3 business departments build more than 80 pages, shortened development cycle from 15 days to 5 days and improved efficiency by 67%. Tech stack: Next.js, NextAuth, React Query, TypeScript, Tailwind CSS, Node.js"
       ]
     },
     {
-      "name": "One code, many ends",
+      "name": "Appointment Service Componentization",
       "description": [
-        "Participated in the development of Taro, the second package transformation, adding business components, to achieve a set of code to support multi-terminal scenarios, involving technology: Taro"
+        "Abstracted 18 high-frequency business components and packaged into private NPM packages for reuse across 3 projects with mini program adaptation. Improved business development efficiency by 30%, component reuse rate reached 85% and reduced duplicate code by over 2000 lines. Tech stack: React, TypeScript, NPM Package Management, ESLint+Prettier, Mini Program Adaptation"
       ]
     },
     {
-      "name": "Front-end grayscale release process",
+      "name": "MAC Electronic Greeting Card Mini Program",
       "description": [
-        "Participated in the development, design and implementation of front-end dynamically calling different versions of front-end code according to the version interface, solving the problem that the front-end could not be released in grayscale due to CDN, involving technology: front-end and back-end API versions, etc."
+        "Developed mini program for MAC Cosmetics marketing, supporting personalized greeting card creation, voice message and social sharing. Built high-performance animation components with WXS, optimized voice file upload, verification and storage, and synchronized data with brand membership system. Peak DAU exceeded 20000, over 100000 greeting cards were created during the campaign, social sharing conversion rate reached 35% with zero major online failures. Tech stack: Native WeChat Mini Program, WXS Syntax"
       ]
     },
     {
-      "name": "AB Test Platform",
+      "name": "Modular Construction Platform",
       "description": [
-        "Participate in the development, the front-end will upload different versions of code through the SDK to the back-end big data, and according to the big data specific algorithm, to achieve AB Test for users, involving technology: AB Test SDK"
+        "Developed modular platform based on Vue2, Koa2 and MySQL, implemented drag-and-drop configuration with 20+ business modules, and realized backend data management and page generation via Node.js. Reduced development dependency, improved business efficiency by 50%, and supported more than 400 activities including over 100 mini program pages. Tech stack: Vue2, Vuetify, Axios, Koa2, Objection.js, MySQL, Node.js"
       ]
     },
     {
-      "name": "Business Scaffolding",
+      "name": "3D Interactive Official Website (Personal Project)",
       "description": [
-        "Main development, build fast generation scaffolding according to business requirements, encapsulate business code, unify eslint and webpack plugins such as postCSS, etc., technologies involved: webpack, axios, postCSS, typescript"
-      ]
+        "Built a 3D interactive official website for a large state-owned enterprise with shader effects, text, music embedding and 3D interaction. Tech stack: React, Three.js, R3F"
+      ],
+      "source": "https://github.com/dxcqcv/abel-portal-source",
+      "demo": "https://dxcqcv.github.io/abel-portal-show/"
     },
     {
-      "name": "SFF platform",
+      "name": "Online Word to HTML Converter (Personal Project)",
       "description": [
-        "Participate in development, encapsulate node.js code again through docker container and kubeless, and deploy on k8s to generate cloud functions for business calls, technologies involved: docker, node.js, kubeless"
-      ]
-    },
-
-    {
-      "name": "word2html online",
+        "Supported multi-file drag-and-drop upload, batch conversion and ZIP download, with mini program adaptation solution. Total usage exceeded 1000 times. Built conversion service with Node.js on backend. Tech stack: TypeScript, React, Mammoth, JSZip, Node.js"
+      ],
       "source": "https://github.com/dxcqcv/word2html",
-      "demo": "https://dxcqcv.github.io/word2html/index.html#/",
-      "description": ["Build with typescript, react and styled-components"]
+      "demo": "https://dxcqcv.github.io/word2html/index.html#/"
     },
     {
-      "name": "Cross domain Demo",
-      "source": "https://github.com/dxcqcv/cross-domain-with-koa",
-      "demo": "",
+      "name": "Dynamic Questionnaire Project",
       "description": [
-        "Used nodeJS,Koa2,webpack to implement cors,jsonp,domain,postmessage"
+        "Developed dynamic questionnaire and mini program sharing function, supporting over 100000 user participations. Tech stack: React, Node.js"
       ]
     },
     {
-      "name": "generator react or vue environment with yoman",
-      "source": "https://github.com/dxcqcv/generator-webpack-humble",
-      "demo": "",
+      "name": "Mini Program WeChat Store Integration",
       "description": [
-        "Used yeoman,webpack,to auto build react or vue environment"
+        "Completed multi-framework mini program compatibility and user authorization access for 3 brands. Tech stack: React, Vue, Node.js"
       ]
     },
     {
-      "name": "MEAN website",
-      "source": "https://github.com/dxcqcv/shanghaihuina",
-      "demo": "https://shanghaihuina.herokuapp.com/",
-      "description": ["Used node.js, Express ,AngularJS and mongoDB"]
+      "name": "Inventory Monitoring Dashboard",
+      "description": [
+        "Built real-time data visualization dashboard for 5 warehouses. Tech stack: React, Node.js"
+      ]
     },
     {
-      "name": "Personal blog",
-      "source": "https://github.com/dxcqcv/dxcqcv.github.io",
-      "demo": "https://dxcqcv.github.io/",
-      "description": ["Used webpack, jekyll, gulp, stylus, and pug"]
-    },
-    {
-      "name": "Personal online CV",
-      "source": "https://github.com/dxcqcv/resume",
-      "demo": "https://dxcqcv.github.io/resume/html-en/index.html",
-      "description": ["Used webpack gulp stylus and pug"]
+      "name": "Customer Service Log Migration",
+      "description": [
+        "Completed serialization and migration of ten-million-level Excel logs with Node.js, Redis and MongoDB, improved overall efficiency by 40%. Tech stack: Node.js, Redis, MongoDB"
+      ]
     }
   ],
   "experience": [
     {
-      "place": "YQB PingAnFu",
-      "start": "2019.5",
-      "end": "2022.1",
-      "position": "Front-End",
+      "place": "Eurasia Consultis International",
+      "start": "Jan 2026",
+      "end": "May 2026",
+      "position": "Frontend Developer",
       "description": [
-        "Manage a team of 10 front-end developers, mainly responsible for marketing h5 and applets, pc portals, cms content management systems, etc",
-        "Customize front-end scaffolding for the team, based on typescript, eslint, prettier, husky, webpack, react, redux with internal methods to help the team develop quickly",
-        "Participate in various business requirements reviews, develop team development processes (brain and flow charts) and coordinate with all parties to gradually implement agile development",
-        "Mainly responsible for the development of the mobile team app, obtaining user steps into points, daily activity reached 20,000+.",
-        "Mainly responsible for the development of the card collection app, using the Taro framework, to achieve a set of code to support both H5 and applet side, daily activity of 2K +",
-        "Mainly responsible for developing CMS platform, realizing modularized page building, supporting hundreds of activity pages of the company"
+        "Developed core components and mini program components for low-code platform with Next.js and Tailwind CSS, built supporting backend services using Node.js. Participated in requirement review and technical solution design. Led 3 iterations of component library, supported over 80 page constructions including 30+ mini program pages, client satisfaction rate reached 92%."
       ]
     },
     {
-      "place": "Chinasoft International",
-      "start": "2017.5",
-      "end": "2019.5",
-      "position": "Front-End",
+      "place": "Robert Half Inc.",
+      "start": "Jun 2023",
+      "end": "Sep 2025",
+      "position": "Frontend Developer",
       "description": [
-        "Main development to build operation template to quickly build no-code platform, using koa2, object.js, mysql, vue, vuetify, axios, archiver and other technologies, no need to develop involved, convenient for product operation to build hundreds of activity pages for the company",
-        "Mainly develop and build automatic cutting tools, using node.js, muse-ui and vue technologies, without development involvement, method product and operation independent cutting and generate hundreds of jump pages"
+        "Maintained global official websites and mini programs for sub-brands including MAC Cosmetics and Bobbi Brown, developed mini program backend APIs and realized data interaction with Node.js. Took part in development of 5 core mini programs. The MAC Electronic Greeting Card Mini Program achieved peak DAU of 20000+. Solved key problems of voice upload and storage, and optimized mini program loading speed by 40%."
       ]
     },
     {
-      "place": "ENN Intelligent Energy Group",
-      "start": "2014.12",
-      "end": "2016.3",
-      "position": "Front-End",
+      "place": "Isoftstone Information Technology (Group) Co.,Ltd.",
+      "start": "Jul 2022",
+      "end": "Apr 2023",
+      "position": "Frontend Developer",
       "description": [
-        "Related technology: jQuery, Bootstrap, Node.js, MongoDB, gulp and webpack"
+        "Developed real estate mini program based on Taro and integrated VR house-viewing function. Connected real estate data APIs with Node.js and built backend management platform with Vue+Element-UI. Improved backend configuration efficiency by 50%, increased mini program house-viewing rate by 30%, and boosted order intention conversion rate by 15% after VR function launched."
       ]
     },
     {
-      "place": "San Die Information technology co., ltd",
-      "start": "2014.8",
-      "end": "2014.12",
-      "position": "Front-End",
-      "description": ["Related technology: HTML, CSS,jQuery,Photoshop"]
+      "place": "Ping An Pay Technology Services Co., Ltd., Shanghai Branch",
+      "start": "Jul 2019",
+      "end": "Jan 2022",
+      "position": "Frontend Developer",
+      "description": [
+        "Developed marketing H5, mini programs, PC portals and CMS systems, built front-end scaffolding and participated in requirement analysis and implementation. Customized unified front-end scaffolding and technical specifications, improved development efficiency by 40%. Developed two mini programs with DAU over 20000 and 2000 respectively, managed user points and card data via Node.js. Built no-code platform supporting over 400 activity pages including 150+ mini program pages, reduced repetitive development by 80%."
+      ]
     },
     {
-      "place": "Yesky.com",
-      "start": "2010.11",
-      "end": "2011.4",
-      "position": "web editor",
+      "place": "Shanghai Guangyuan Labor Services Co., Ltd.",
+      "start": "Jun 2017",
+      "end": "Jun 2019",
+      "position": "Frontend Developer",
       "description": [
-        "To write testable articles about smart phone, soundBox etc.",
-        "To write some interview report about dealers."
+        "Completed business development with Vue stack, independently developed low-code platform and automatic image-cutting tools, which accelerated business operation efficiency by 50%."
+      ]
+    },
+    {
+      "place": "ENN Energy Services (Shanghai) Co., Ltd.",
+      "start": "Dec 2014",
+      "end": "Feb 2016",
+      "position": "Frontend Developer",
+      "description": [
+        "Responsible for front-end development of Energy Cloud Platform and large-screen visualization projects, implemented front-end and back-end separation architecture. Independently delivered Langfang Power Supply Station real-time data large-screen project with Three.js and Unit3D, optimized Node.js backend API response speed by 50%."
+      ]
+    },
+    {
+      "place": "Shanghai Puxian Business Services Co., Ltd.",
+      "start": "Aug 2014",
+      "end": "Nov 2014",
+      "position": "Frontend Developer",
+      "description": [
+        "Developed web pages with jQuery and completed integration and debugging with Java JSP pages, mastered combined development of Java and jQuery."
+      ]
+    },
+    {
+      "place": "Shanghai Yutong Translation Co., Ltd.",
+      "start": "Jan 2012",
+      "end": "Sep 2012",
+      "position": "Frontend Developer",
+      "description": [
+        "Modified WordPress sites and created web pages with JavaScript, CSS and PHP according to designs. Skilled in PHP+JavaScript development, form building and MySQL database connection."
+      ]
+    },
+    {
+      "place": "China International Talent Development Center Co., Ltd. Shanghai Branch",
+      "start": "Jan 2011",
+      "end": "Apr 2011",
+      "position": "East China Website Editor",
+      "description": [
+        "Created web pages with JavaScript, Dreamweaver and Flash. In charge of digital product reviews, trade show reporting and distributor liaison, with solid ability of requirement collection and cross-department collaboration."
       ]
     }
   ]
